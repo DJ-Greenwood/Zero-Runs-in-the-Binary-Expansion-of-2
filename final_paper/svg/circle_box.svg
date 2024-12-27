@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <!-- Background -->
+  <rect width="600" height="300" fill="white"/>
+  
+  <!-- Left side - Unit Square -->
+  <g transform="translate(50, 50)">
+    <!-- Title -->
+    <text x="100" y="-20" text-anchor="middle" font-family="Arial" font-size="14">Unit Square (size 1)</text>
+    
+    <!-- Original square -->
+    <rect x="50" y="0" width="100" height="100" fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Circles at corners -->
+    <circle cx="50" cy="0" r="100" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    <circle cx="150" cy="0" r="100" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    <circle cx="50" cy="100" r="100" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    <circle cx="150" cy="100" r="100" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Inner square -->
+    <path d="M100 17.157 L132.843 50 L100 82.843 L67.157 50 Z" 
+          fill="none" stroke="red" stroke-width="2"/>
+  </g>
+  
+  <!-- Right side - Size 2 Square -->
+  <g transform="translate(300, 50)">
+    <!-- Title -->
+    <text x="100" y="-20" text-anchor="middle" font-family="Arial" font-size="14">Square (size 2)</text>
+    
+    <!-- Original square -->
+    <rect x="0" y="0" width="200" height="200" fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Circles at corners -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    <circle cx="200" cy="0" r="200" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="200" r="200" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    <circle cx="200" cy="200" r="200" fill="none" stroke="blue" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Inner square -->
+    <path d="M100 34.314 L165.686 100 L100 165.686 L34.314 100 Z" 
+          fill="none" stroke="red" stroke-width="2"/>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 270)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="black" stroke-width="2"/>
+    <text x="25" y="5" font-family="Arial" font-size="12">Original Square</text>
+    
+    <line x1="120" y1="0" x2="140" y2="0" stroke="blue" stroke-width="1"/>
+    <text x="145" y="5" font-family="Arial" font-size="12">Circles</text>
+    
+    <line x1="200" y1="0" x2="220" y2="0" stroke="red" stroke-width="2"/>
+    <text x="225" y="5" font-family="Arial" font-size="12">Inner Square</text>
+  </g>
+</svg>
