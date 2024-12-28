@@ -171,6 +171,6 @@ if __name__ == "__main__":
 
     reports = analyzer.generate_formatted_report(results)
     # Save the results to a file
-    with open("./math_problems/chatgpt/final_paper/Code/data/zero_run_analysis_report.txt", "w") as file:
+    with open("final_paper/Code/data/zero_run_analysis_report.txt", "w") as file:
         file.write(analyzer.generate_report(results))
     print(reports)

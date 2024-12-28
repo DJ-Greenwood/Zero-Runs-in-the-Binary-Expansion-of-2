@@ -1,0 +1,722 @@
+Zero Run Analysis Report
+==================================================
+Position: 1, Run Length: 2
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 3, 'error': Decimal('0.039213562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('1.406563702236870932928363824523593911567348572115378977382041667208119942999767159324173314832850523')}
+--------------------------------------------------
+Position: 1, Run Length: 3
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 6, 'error': Decimal('0.039213562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('1.406563702236870932928363824523593911567348572115378977382041667208119942999767159324173314832850523')}
+--------------------------------------------------
+Position: 1, Run Length: 4
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 13, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 1, Run Length: 5
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 26, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 1, Run Length: 6
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 53, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 1, Run Length: 7
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 106, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 1, Run Length: 8
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 212, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 1, Run Length: 9
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 424, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 1, Run Length: 10
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 848, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 1, Run Length: 15
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 27145, 'error': Decimal('0.000013733271532548801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.862225993040903308726839078968210402428050491621286643222673763521482872372769738917698710730386621')}
+--------------------------------------------------
+Position: 1, Run Length: 20
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 868668, 'error': Decimal('3.81831102861301688724209698078569671875376948073176679737990732478462107038850387534327641573E-7'), 'quality': Decimal('6.418128698124472205792181988728331041615655276717353174829543771203833630667734954271016373064760720')}
+--------------------------------------------------
+Position: 1, Run Length: 25
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 27797401, 'error': Decimal('9.302073015110282474209698078569671875376948073176679737990732478462107038850387534327641573E-9'), 'quality': Decimal('8.031420255887172781522816705655872722287251425525248929716435622328392250095239275306420792574619961')}
+--------------------------------------------------
+Position: 1, Run Length: 30
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 889516851, 'error': Decimal('4.54508556263236575772198078569671875376948073176679737990732478462107038850387534327641573E-10'), 'quality': Decimal('9.342457936637982282041874379719955735152284483671676963171079164827331032271339402750969520002413093')}
+--------------------------------------------------
+Position: 1, Run Length: 40
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 910865256423, 'error': Decimal('2.15952727658920933636066850921875376948073176679737990732478462107038850387534327641573E-13'), 'quality': Decimal('12.66564130608864491012748317426493479413770155075136926872598139312526559137563004646722810291355037')}
+--------------------------------------------------
+Position: 1, Run Length: 50
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 932726022577638, 'error': Decimal('1.25371671790502177712854645019908198073176679737990732478462107038850387534327641573E-16'), 'quality': Decimal('15.90180058292231301500733981365988541046696397806915504080227243984465579918887448665830686710058987')}
+--------------------------------------------------
+Position: 1, Run Length: 60
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 955111447119501601, 'error': Decimal('3.7900651177865141593101239342936232356367237990732478462107038850387534327641573E-20'), 'quality': Decimal('19.42135332827667408122018432569740842454735513795975929783370734449436047343920093890941949319429375')}
+--------------------------------------------------
+Position: 1, Run Length: 70
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 978034121850369639513, 'error': Decimal('2.07685025048776504560888062692165045080311721201228462107038850387534327641573E-22'), 'quality': Decimal('21.68259481676843265505928856620253096100563197502506590482461610388653166724233694093111648546335159')}
+--------------------------------------------------
+Position: 1, Run Length: 80
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 1001506940774778510861814, 'error': Decimal('6.2691297966558168164480982604368835292881365107856638288850387534327641573E-26'), 'quality': Decimal('25.20279273839395831069994320545673454071896374304182197687445522253247379289028041831739340016755270')}
+--------------------------------------------------
+Position: 1, Run Length: 90
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 1025543107353373195122497691, 'error': Decimal('8.7296528218671287006203663526920106015702417604572630281051596827641573E-29'), 'quality': Decimal('28.05900302783458077560212075375553262668576074533246617777774717831070268675644433129096490355161879')}
+--------------------------------------------------
+Position: 1, Run Length: 100
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 1050156141929854151805437635805, 'error': Decimal('1.27398191749482508207657063172227636813106525025588253935774989262667E-31'), 'quality': Decimal('30.89483673619843026948786215659599063948367588697488396146043430085482118044132176783238936059735267')}
+--------------------------------------------------
+Position: 1, Run Length: 200
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 1331231063650741281199391621216969426914757964520883151254452, 'error': Decimal('1.15096185586783132607707147018581173636E-61'), 'quality': Decimal('60.93893906912487277476162952358525205354530559143138765176351596703014902284222205029564054351127048')}
+--------------------------------------------------
+Position: 1, Run Length: 300
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 1687535856879326444468005800496198810415139689959330691833331760279885482157657930246196910, 'error': Decimal('3.9014899E-92'), 'quality': Decimal('91.40876951302883686086752083750475494955219367182610636125465959220826621576054028652546604260355748')}
+--------------------------------------------------
+Position: 1, Run Length: 500
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 2711765569470584157271009723192613472993026204819465991143225208193135047306022789447772050121063497000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 1, Run Length: 1000
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 0.0, 'exceeds_bound': True, 'ratio_to_bound': Decimal('Infinity')}
+Approximation: {'p': 2, 'q': 8876667945921142811676685543722426516687986949959384210586007485947317118665195388609185112256095038000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 2, Run Length: 2
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 2.0}
+Approximation: {'p': 5, 'q': 2, 'error': Decimal('0.039213562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('1.406563702236870932928363824523593911567348572115378977382041667208119942999767159324173314832850523')}
+--------------------------------------------------
+Position: 2, Run Length: 3
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 3.0}
+Approximation: {'p': 5, 'q': 5, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 2, Run Length: 4
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 4.0}
+Approximation: {'p': 5, 'q': 10, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 2, Run Length: 5
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 5.0}
+Approximation: {'p': 5, 'q': 21, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 2, Run Length: 6
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 6.0}
+Approximation: {'p': 5, 'q': 42, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 2, Run Length: 7
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 7.0}
+Approximation: {'p': 5, 'q': 84, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 2, Run Length: 8
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 8.0}
+Approximation: {'p': 5, 'q': 168, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 2, Run Length: 9
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 9.0}
+Approximation: {'p': 5, 'q': 336, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 2, Run Length: 10
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 10.0}
+Approximation: {'p': 5, 'q': 672, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 2, Run Length: 15
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 15.0}
+Approximation: {'p': 5, 'q': 21523, 'error': Decimal('0.000006103877001298801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('5.214394226395806254742731803448728198957392212801447442436877281488274580433718410023395806328720986')}
+--------------------------------------------------
+Position: 2, Run Length: 20
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 20.0}
+Approximation: {'p': 5, 'q': 688761, 'error': Decimal('1.43412523759739188724209698078569671875376948073176679737990732478462107038850387534327641573E-7'), 'quality': Decimal('6.843412921455839178748904063724992451870482971514457513175765371442791562208424578285101248525511595')}
+--------------------------------------------------
+Position: 2, Run Length: 25
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 25.0}
+Approximation: {'p': 5, 'q': 22040371, 'error': Decimal('1.851492418186454349209698078569671875376948073176679737990732478462107038850387534327641573E-9'), 'quality': Decimal('8.732478062035563466812449528591434581768892781254448489714443155448017012438432686212118827585702770')}
+--------------------------------------------------
+Position: 2, Run Length: 30
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 30.0}
+Approximation: {'p': 5, 'q': 705291879, 'error': Decimal('2.21677912609366946865948078569671875376948073176679737990732478462107038850387534327641573E-10'), 'quality': Decimal('9.654277576663309543570962493199108944658706949626748224989883885370159601796413366813278363251645035')}
+--------------------------------------------------
+Position: 2, Run Length: 40
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 40.0}
+Approximation: {'p': 5, 'q': 722218885070, 'error': Decimal('2.15952727658920933636066850921875376948073176679737990732478462107038850387534327641573E-13'), 'quality': Decimal('12.66564130608864491012748317426493479413770155075136926872598139312526559137563004646722810291355037')}
+--------------------------------------------------
+Position: 2, Run Length: 50
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 50.0}
+Approximation: {'p': 5, 'q': 739552138312652, 'error': Decimal('1.25371671790502177712854645019908198073176679737990732478462107038850387534327641573E-16'), 'quality': Decimal('15.90180058292231301500733981365988541046696397806915504080227243984465579918887448665830686710058987')}
+--------------------------------------------------
+Position: 2, Run Length: 60
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 60.0}
+Approximation: {'p': 5, 'q': 757301389632156226, 'error': Decimal('3.7900651177865141593101239342936232356367237990732478462107038850387534327641573E-20'), 'quality': Decimal('19.42135332827667408122018432569740842454735513795975929783370734449436047343920093890941949319429375')}
+--------------------------------------------------
+Position: 2, Run Length: 70
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 70.0}
+Approximation: {'p': 5, 'q': 775476622983327975602, 'error': Decimal('2.07685025048776504560888062692165045080311721201228462107038850387534327641573E-22'), 'quality': Decimal('21.68259481676843265505928856620253096100563197502506590482461610388653166724233694093111648546335159')}
+--------------------------------------------------
+Position: 2, Run Length: 80
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 80.0}
+Approximation: {'p': 5, 'q': 794088061934927847017452, 'error': Decimal('6.2691297966558168164480982604368835292881365107856638288850387534327641573E-26'), 'quality': Decimal('25.20279273839395831069994320545673454071896374304182197687445522253247379289028041831739340016755270')}
+--------------------------------------------------
+Position: 2, Run Length: 90
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 90.0}
+Approximation: {'p': 5, 'q': 813146175421366115345871158, 'error': Decimal('8.7296528218671287006203663526920106015702417604572630281051596827641573E-29'), 'quality': Decimal('28.05900302783458077560212075375553262668576074533246617777774717831070268675644433129096490355161879')}
+--------------------------------------------------
+Position: 2, Run Length: 100
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 100.0}
+Approximation: {'p': 5, 'q': 832661683631478902114172066234, 'error': Decimal('1.27398191749482508207657063172227636813106525025588253935774989262667E-31'), 'quality': Decimal('30.89483673619843026948786215659599063948367588697488396146043430085482118044132176783238936059735267')}
+--------------------------------------------------
+Position: 2, Run Length: 200
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 200.0}
+Approximation: {'p': 5, 'q': 1055524083042492286856821150092776251307312935258973467207528, 'error': Decimal('1.15096185586783132607707147018581173636E-61'), 'quality': Decimal('60.93893906912487277476162952358525205354530559143138765176351596703014902284222205029564054351127048')}
+--------------------------------------------------
+Position: 2, Run Length: 300
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 300.0}
+Approximation: {'p': 5, 'q': 1338035737424166802667565912583019459778810986252725133030523071205389664551979154308996444, 'error': Decimal('3.9014899E-92'), 'quality': Decimal('91.40876951302883686086752083750475494955219367182610636125465959220826621576054028652546604260355748')}
+--------------------------------------------------
+Position: 2, Run Length: 500
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 500.0}
+Approximation: {'p': 5, 'q': 2150140531045026444528829749557627793769410363595867192803159048290136298207371024012274007916222837000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 2, Run Length: 1000
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.0, 'exceeds_bound': True, 'ratio_to_bound': 1000.0}
+Approximation: {'p': 5, 'q': 7038249819979612413869120596844834927761925782863432346734511088191123726081029552286386436355231494000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 3, Run Length: 2
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 1.261859507142915}
+Approximation: {'p': 11, 'q': 1, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 3, Run Length: 3
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 1.8927892607143724}
+Approximation: {'p': 11, 'q': 2, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 3, Run Length: 4
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 2.52371901428583}
+Approximation: {'p': 11, 'q': 5, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 3, Run Length: 5
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 3.1546487678572874}
+Approximation: {'p': 11, 'q': 10, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 3, Run Length: 6
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 3.7855785214287447}
+Approximation: {'p': 11, 'q': 20, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 3, Run Length: 7
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 4.4165082750002025}
+Approximation: {'p': 11, 'q': 40, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 3, Run Length: 8
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 5.04743802857166}
+Approximation: {'p': 11, 'q': 80, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 3, Run Length: 9
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 5.678367782143117}
+Approximation: {'p': 11, 'q': 160, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 3, Run Length: 10
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 6.309297535714575}
+Approximation: {'p': 11, 'q': 321, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 3, Run Length: 15
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 9.463946303571863}
+Approximation: {'p': 11, 'q': 10279, 'error': Decimal('0.000002289179735673801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('5.640320107217606328354343856570512397845313997711725895760514900141220688299945555662243118963379320')}
+--------------------------------------------------
+Position: 3, Run Length: 20
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 12.61859507142915}
+Approximation: {'p': 11, 'q': 328947, 'error': Decimal('2.4203234208957938724209698078569671875376948073176679737990732478462107038850387534327641573E-8'), 'quality': Decimal('7.616126596612407808650045039563369486134132102457267664004544642014423814241197042179061619934119991')}
+--------------------------------------------------
+Position: 3, Run Length: 25
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 15.773243839286437}
+Approximation: {'p': 11, 'q': 10526310, 'error': Decimal('1.851492418186454349209698078569671875376948073176679737990732478462107038850387534327641573E-9'), 'quality': Decimal('8.732478062035563466812449528591434581768892781254448489714443155448017012438432686212118827585702770')}
+--------------------------------------------------
+Position: 3, Run Length: 30
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 18.927892607143725}
+Approximation: {'p': 11, 'q': 336841935, 'error': Decimal('1.05262590782432132412823078569671875376948073176679737990732478462107038850387534327641573E-10'), 'quality': Decimal('9.977725945085723949199553068861768354041784185385331504352481162144562724705487816431844472472032009')}
+--------------------------------------------------
+Position: 3, Run Length: 40
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 25.2371901428583}
+Approximation: {'p': 11, 'q': 344926142365, 'error': Decimal('1.02265889937304903896686968109375376948073176679737990732478462107038850387534327641573E-13'), 'quality': Decimal('12.99026919798140992853440974582283465531739220636709332420890503319408787596686418386820490055857986')}
+--------------------------------------------------
+Position: 3, Run Length: 50
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 31.546487678572873}
+Approximation: {'p': 11, 'q': 353204369782681, 'error': Decimal('1.4349369327986523670491478210826166823176679737990732478462107038850387534327641573E-17'), 'quality': Decimal('16.84316718627454041578824633926372760665606376320157094147322119400377253992048682015031616692278699')}
+--------------------------------------------------
+Position: 3, Run Length: 60
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 37.85578521428745}
+Approximation: {'p': 11, 'q': 361681274657465476, 'error': Decimal('3.7900651177865141593101239342936232356367237990732478462107038850387534327641573E-20'), 'quality': Decimal('19.42135332827667408122018432569740842454735513795975929783370734449436047343920093890941949319429375')}
+--------------------------------------------------
+Position: 3, Run Length: 70
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 44.16508275000202}
+Approximation: {'p': 11, 'q': 370361625249244647781, 'error': Decimal('1.01805906641988962177347750107209799823887771005915962107038850387534327641573E-22'), 'quality': Decimal('21.99222702408564928553051371844020026047249758283113427524176086216756140883880096945704502425795956')}
+--------------------------------------------------
+Position: 3, Run Length: 80
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 50.4743802857166}
+Approximation: {'p': 11, 'q': 379250304255226519328728, 'error': Decimal('6.2691297966558168164480982604368835292881365107856638288850387534327641573E-26'), 'quality': Decimal('25.20279273839395831069994320545673454071896374304182197687445522253247379289028041831739340016755270')}
+--------------------------------------------------
+Position: 3, Run Length: 90
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 56.783677821431176}
+Approximation: {'p': 11, 'q': 388352311557351955792618092, 'error': Decimal('8.7296528218671287006203663526920106015702417604572630281051596827641573E-29'), 'quality': Decimal('28.05900302783458077560212075375553262668576074533246617777774717831070268675644433129096490355161879')}
+--------------------------------------------------
+Position: 3, Run Length: 100
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 63.09297535714575}
+Approximation: {'p': 11, 'q': 397672767034728402731640927093, 'error': Decimal('2.8790578596856032531190992511879358103955720636960378339490122929659E-32'), 'quality': Decimal('31.54074960712966945199841123501844993688820856639268060918920930111579155198657015824715875353054392')}
+--------------------------------------------------
+Position: 3, Run Length: 200
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 126.1859507142915}
+Approximation: {'p': 11, 'q': 504110121825994298171680207844389900092422876735154099113681, 'error': Decimal('3.7308494613518861268406346346329620629E-62'), 'quality': Decimal('61.42819227425672240979005668229262987082681640041778619614542736782912572967949184242533504855616208')}
+--------------------------------------------------
+Position: 3, Run Length: 300
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 189.27892607143724}
+Approximation: {'p': 11, 'q': 639035498513847519066686136756660758506153578839514015424905693056398029340621602434595512, 'error': Decimal('3.9014899E-92'), 'quality': Decimal('91.40876951302883686086752083750475494955219367182610636125465959220826621576054028652546604260355748')}
+--------------------------------------------------
+Position: 3, Run Length: 500
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 315.46487678572873}
+Approximation: {'p': 11, 'q': 1026890454193911019044469802287656435322178681148669596123026728484138800010067493141277923506541517000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 3, Run Length: 1000
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 1.584962500721156, 'exceeds_bound': True, 'ratio_to_bound': 630.9297535714575}
+Approximation: {'p': 11, 'q': 3361413568096551618253990703089651749909803448671528619031518292678736940912697879640789084553504407000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 4, Run Length: 2
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': False, 'ratio_to_bound': 1.0}
+Approximation: {'p': 22, 'q': 2, 'error': Decimal('0.007963562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('2.098892614060508843980853994826817418124650828134036038755467712995452458567166177659163074716012333')}
+--------------------------------------------------
+Position: 4, Run Length: 3
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 1.5}
+Approximation: {'p': 22, 'q': 5, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 4, Run Length: 4
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 2.0}
+Approximation: {'p': 22, 'q': 10, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 4, Run Length: 5
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 2.5}
+Approximation: {'p': 22, 'q': 20, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 4, Run Length: 6
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 3.0}
+Approximation: {'p': 22, 'q': 40, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 4, Run Length: 7
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 3.5}
+Approximation: {'p': 22, 'q': 80, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 4, Run Length: 8
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 4.0}
+Approximation: {'p': 22, 'q': 160, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 4, Run Length: 9
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 4.5}
+Approximation: {'p': 22, 'q': 321, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 4, Run Length: 10
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 5.0}
+Approximation: {'p': 22, 'q': 642, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 4, Run Length: 15
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 7.5}
+Approximation: {'p': 22, 'q': 20559, 'error': Decimal('3.81831102861301688724209698078569671875376948073176679737990732478462107038850387534327641573E-7'), 'quality': Decimal('6.418128698124472205792181988728331041615655276717353174829543771203833630667734954271016373064760720')}
+--------------------------------------------------
+Position: 4, Run Length: 20
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 10.0}
+Approximation: {'p': 22, 'q': 657894, 'error': Decimal('2.4203234208957938724209698078569671875376948073176679737990732478462107038850387534327641573E-8'), 'quality': Decimal('7.616126596612407808650045039563369486134132102457267664004544642014423814241197042179061619934119991')}
+--------------------------------------------------
+Position: 4, Run Length: 25
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 12.5}
+Approximation: {'p': 22, 'q': 21052620, 'error': Decimal('1.851492418186454349209698078569671875376948073176679737990732478462107038850387534327641573E-9'), 'quality': Decimal('8.732478062035563466812449528591434581768892781254448489714443155448017012438432686212118827585702770')}
+--------------------------------------------------
+Position: 4, Run Length: 30
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 15.0}
+Approximation: {'p': 22, 'q': 673683871, 'error': Decimal('4.7054929868964725186260578569671875376948073176679737990732478462107038850387534327641573E-11'), 'quality': Decimal('10.32739486952198179527916138278408014680588523641631584425159479212090629162447301540873386001399279')}
+--------------------------------------------------
+Position: 4, Run Length: 40
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 20.0}
+Approximation: {'p': 22, 'q': 689852284731, 'error': Decimal('4.5422471076496889026997026703125376948073176679737990732478462107038850387534327641573E-14'), 'quality': Decimal('13.34272924295435137467281523558557449064219033265647458918497575759098872896250152895788503330837062')}
+--------------------------------------------------
+Position: 4, Run Length: 50
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 25.0}
+Approximation: {'p': 22, 'q': 706408739565362, 'error': Decimal('1.4349369327986523670491478210826166823176679737990732478462107038850387534327641573E-17'), 'quality': Decimal('16.84316718627454041578824633926372760665606376320157094147322119400377253992048682015031616692278699')}
+--------------------------------------------------
+Position: 4, Run Length: 60
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 30.0}
+Approximation: {'p': 22, 'q': 723362549314930952, 'error': Decimal('3.7900651177865141593101239342936232356367237990732478462107038850387534327641573E-20'), 'quality': Decimal('19.42135332827667408122018432569740842454735513795975929783370734449436047343920093890941949319429375')}
+--------------------------------------------------
+Position: 4, Run Length: 70
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 35.0}
+Approximation: {'p': 22, 'q': 740723250498489295563, 'error': Decimal('4.8866347438595190985577593814732177195675795908259712107038850387534327641573E-23'), 'quality': Decimal('22.31099012151092611064200487468089186726623585607643739475381643392741317084584345892999998948692086')}
+--------------------------------------------------
+Position: 4, Run Length: 80
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 40.0}
+Approximation: {'p': 22, 'q': 758500608510453038657457, 'error': Decimal('1.0992509681993938485017939349996156945018108176551706648225387534327641573E-26'), 'quality': Decimal('25.95890314318974901628350423607416863473093088324358492443829310391120550148371001855476863294836142')}
+--------------------------------------------------
+Position: 4, Run Length: 90
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 45.0}
+Approximation: {'p': 22, 'q': 776704623114703911585236185, 'error': Decimal('3.6809430284526531459853035348821787316617205757595157975753745265141573E-29'), 'quality': Decimal('28.43404090426485515705434127322625563833355090559787559230412147102922260149511120507107233173214167')}
+--------------------------------------------------
+Position: 4, Run Length: 100
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 50.0}
+Approximation: {'p': 22, 'q': 795345534069456805463281854186, 'error': Decimal('2.8790578596856032531190992511879358103955720636960378339490122929659E-32'), 'quality': Decimal('31.54074960712966945199841123501844993688820856639268060918920930111579155198657015824715875353054392')}
+--------------------------------------------------
+Position: 4, Run Length: 200
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 100.0}
+Approximation: {'p': 22, 'q': 1008220243651988596343360415688779800184845753470308198227362, 'error': Decimal('3.7308494613518861268406346346329620629E-62'), 'quality': Decimal('61.42819227425672240979005668229262987082681640041778619614542736782912572967949184242533504855616208')}
+--------------------------------------------------
+Position: 4, Run Length: 300
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 150.0}
+Approximation: {'p': 22, 'q': 1278070997027695038133372273513321517012307157679028030849811386112796058681243204869191025, 'error': Decimal('8.333065E-93'), 'quality': Decimal('92.07919523055509389101078950889746770515882572078444524278796519241615835579599359583801720967097574')}
+--------------------------------------------------
+Position: 4, Run Length: 500
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 250.0}
+Approximation: {'p': 22, 'q': 2053780908387822038088939604575312870644357362297339192246053456968277600020134986282555847013083033000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 4, Run Length: 1000
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.0, 'exceeds_bound': True, 'ratio_to_bound': 500.0}
+Approximation: {'p': 22, 'q': 6722827136193103236507981406179303499819606897343057238063036585357473881825395759281578169107008814000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 5, Run Length: 2
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': False, 'ratio_to_bound': 0.8613531161467861}
+Approximation: {'p': 45, 'q': 1, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 5, Run Length: 3
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 1.2920296742201793}
+Approximation: {'p': 45, 'q': 2, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 5, Run Length: 4
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 1.7227062322935722}
+Approximation: {'p': 45, 'q': 4, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 5, Run Length: 5
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 2.1533827903669653}
+Approximation: {'p': 45, 'q': 8, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 5, Run Length: 6
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 2.5840593484403587}
+Approximation: {'p': 45, 'q': 16, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 5, Run Length: 7
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 3.0147359065137516}
+Approximation: {'p': 45, 'q': 32, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 5, Run Length: 8
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 3.4454124645871445}
+Approximation: {'p': 45, 'q': 65, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 5, Run Length: 9
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 3.876089022660538}
+Approximation: {'p': 45, 'q': 130, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 5, Run Length: 10
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 4.306765580733931}
+Approximation: {'p': 45, 'q': 260, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 5, Run Length: 15
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 6.460148371100896}
+Approximation: {'p': 45, 'q': 8350, 'error': Decimal('3.81831102861301688724209698078569671875376948073176679737990732478462107038850387534327641573E-7'), 'quality': Decimal('6.418128698124472205792181988728331041615655276717353174829543771203833630667734954271016373064760720')}
+--------------------------------------------------
+Position: 5, Run Length: 20
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 8.613531161467861}
+Approximation: {'p': 45, 'q': 267212, 'error': Decimal('2.4203234208957938724209698078569671875376948073176679737990732478462107038850387534327641573E-8'), 'quality': Decimal('7.616126596612407808650045039563369486134132102457267664004544642014423814241197042179061619934119991')}
+--------------------------------------------------
+Position: 5, Run Length: 25
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 10.766913951834827}
+Approximation: {'p': 45, 'q': 8550809, 'error': Decimal('9.20169843570975833584698078569671875376948073176679737990732478462107038850387534327641573E-10'), 'quality': Decimal('9.036132003830758473337753819725279269596498034833360497320757904412392774774160608191034022055488969')}
+--------------------------------------------------
+Position: 5, Run Length: 30
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 12.920296742201792}
+Approximation: {'p': 45, 'q': 273625919, 'error': Decimal('1.7951099412231021572979328569671875376948073176679737990732478462107038850387534327641573E-11'), 'quality': Decimal('10.74590894797459102542074609446662781962821710372551415685736212667289722427446859111803210573654374')}
+--------------------------------------------------
+Position: 5, Run Length: 40
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 17.227062322935723}
+Approximation: {'p': 45, 'q': 280192941687, 'error': Decimal('1.7000761646092881592152056000000376948073176679737990732478462107038850387534327641573E-14'), 'quality': Decimal('13.76953162148727714444263874113205855813016342090412613649503316866507174950272336893538242563287044')}
+--------------------------------------------------
+Position: 5, Run Length: 50
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 21.533827903669653}
+Approximation: {'p': 45, 'q': 286917572288100, 'error': Decimal('1.4349369327986523670491478210826166823176679737990732478462107038850387534327641573E-17'), 'quality': Decimal('16.84316718627454041578824633926372760665606376320157094147322119400377253992048682015031616692278699')}
+--------------------------------------------------
+Position: 5, Run Length: 60
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 25.840593484403584}
+Approximation: {'p': 45, 'q': 293803594023014929, 'error': Decimal('1.0795596865727530742914919321187689570722706740732478462107038850387534327641573E-20'), 'quality': Decimal('19.96675334144220677659862244766496923480181064501301928746610605290973613100332828370418919525776482')}
+--------------------------------------------------
+Position: 5, Run Length: 70
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 30.147359065137515}
+Approximation: {'p': 45, 'q': 300854880279567287703, 'error': Decimal('2.2396567836898305389692515668493365881569808359431587107038850387534327641573E-23'), 'quality': Decimal('22.64981853004536491053953073335638611417732411465285444583461798833928093503063568109089681943018102')}
+--------------------------------------------------
+Position: 5, Run Length: 80
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 34.454124645871445}
+Approximation: {'p': 45, 'q': 308075397406276902608738, 'error': Decimal('1.0992509681993938485017939349996156945018108176551706648225387534327641573E-26'), 'quality': Decimal('25.95890314318974901628350423607416863473093088324358492443829310391120550148371001855476863294836142')}
+--------------------------------------------------
+Position: 5, Run Length: 90
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 38.760890226605376}
+Approximation: {'p': 45, 'q': 315469206944027548271348147, 'error': Decimal('1.1565881317454153686677721259772627967074599834106421823104819483891573E-29'), 'quality': Decimal('28.93682126849439996217118326598924389748731071958508497932614046410507160792597950316741572182685744')}
+--------------------------------------------------
+Position: 5, Run Length: 100
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 43.06765580733931}
+Approximation: {'p': 45, 'q': 323040467910684209429860502997, 'error': Decimal('4.138675308699413612074474846792288426668019539803409440418906346407E-33'), 'quality': Decimal('32.38313864394749125869580125310442377801375165557464400813981324942677323403740474533510781581426707')}
+--------------------------------------------------
+Position: 5, Run Length: 200
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 86.13531161467861}
+Approximation: {'p': 45, 'q': 409502443044986917144758739036396997847488513157823561153349, 'error': Decimal('1.7861571870202793433581146178266732377E-62'), 'quality': Decimal('61.74808032458987616658111082593100215259801622560979373873648598699924366456347848947542750486642255')}
+--------------------------------------------------
+Position: 5, Run Length: 300
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 129.20296742201793}
+Approximation: {'p': 45, 'q': 519106017720903989998298858617264872973145921692119811063482322871210817599149703554984674, 'error': Decimal('8.333065E-93'), 'quality': Decimal('92.07919523055509389101078950889746770515882572078444524278796519241615835579599359583801720967097574')}
+--------------------------------------------------
+Position: 5, Run Length: 500
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 215.33827903669655}
+Approximation: {'p': 45, 'q': 834171208879502206164689512323026589072072678551613595008815545840421403635595417681841601700261909200000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 5, Run Length: 1000
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 2.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 430.6765580733931}
+Approximation: {'p': 45, 'q': 2730568200523533263531712321758588894025165677630778401688569287011437252401430293631172550057059047000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 10, Run Length: 2
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': False, 'ratio_to_bound': 0.6020599913279624}
+Approximation: {'p': 1448, 'q': 0, 'error': Decimal('0.000151062373095048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('3.820843697091588815052005057664749068540756795838287417666242558390125514194223885793348268157029434')}
+--------------------------------------------------
+Position: 10, Run Length: 3
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': False, 'ratio_to_bound': 0.9030899869919436}
+Approximation: {'p': 1448, 'q': 1, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 10, Run Length: 4
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 1.2041199826559248}
+Approximation: {'p': 1448, 'q': 2, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 10, Run Length: 5
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 1.505149978319906}
+Approximation: {'p': 1448, 'q': 4, 'error': Decimal('0.000028992060595048801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.537720916302266048800257203914889750706121692521825937308068932082535665134330697102366248043820213')}
+--------------------------------------------------
+Position: 10, Run Length: 6
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 1.8061799739838873}
+Approximation: {'p': 1448, 'q': 9, 'error': Decimal('0.000013733271532548801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('4.862225993040903308726839078968210402428050491621286643222673763521482872372769738917698710730386621')}
+--------------------------------------------------
+Position: 10, Run Length: 7
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 2.1072099696478683}
+Approximation: {'p': 1448, 'q': 19, 'error': Decimal('0.000006103877001298801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('5.214394226395806254742731803448728198957392212801447442436877281488274580433718410023395806328720986')}
+--------------------------------------------------
+Position: 10, Run Length: 8
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 2.4082399653118496}
+Approximation: {'p': 1448, 'q': 39, 'error': Decimal('0.000002289179735673801688724209698078569671875376948073176679737990732478462107038850387534327641573'), 'quality': Decimal('5.640320107217606328354343856570512397845313997711725895760514900141220688299945555662243118963379320')}
+--------------------------------------------------
+Position: 10, Run Length: 9
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 2.709269960975831}
+Approximation: {'p': 1448, 'q': 79, 'error': Decimal('3.81831102861301688724209698078569671875376948073176679737990732478462107038850387534327641573E-7'), 'quality': Decimal('6.418128698124472205792181988728331041615655276717353174829543771203833630667734954271016373064760720')}
+--------------------------------------------------
+Position: 10, Run Length: 10
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 3.010299956639812}
+Approximation: {'p': 1448, 'q': 158, 'error': Decimal('3.81831102861301688724209698078569671875376948073176679737990732478462107038850387534327641573E-7'), 'quality': Decimal('6.418128698124472205792181988728331041615655276717353174829543771203833630667734954271016373064760720')}
+--------------------------------------------------
+Position: 10, Run Length: 15
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 4.515449934959718}
+Approximation: {'p': 1448, 'q': 5068, 'error': Decimal('2.4203234208957938724209698078569671875376948073176679737990732478462107038850387534327641573E-8'), 'quality': Decimal('7.616126596612407808650045039563369486134132102457267664004544642014423814241197042179061619934119991')}
+--------------------------------------------------
+Position: 10, Run Length: 20
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': False, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 6.020599913279624}
+Approximation: {'p': 1448, 'q': 162201, 'error': Decimal('9.20169843570975833584698078569671875376948073176679737990732478462107038850387534327641573E-10'), 'quality': Decimal('9.036132003830758473337753819725279269596498034833360497320757904412392774774160608191034022055488969')}
+--------------------------------------------------
+Position: 10, Run Length: 25
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 7.5257498915995305}
+Approximation: {'p': 1448, 'q': 5190463, 'error': Decimal('1.7951099412231021572979328569671875376948073176679737990732478462107038850387534327641573E-11'), 'quality': Decimal('10.74590894797459102542074609446662781962821710372551415685736212667289722427446859111803210573654374')}
+--------------------------------------------------
+Position: 10, Run Length: 30
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 9.030899869919436}
+Approximation: {'p': 1448, 'q': 166094835, 'error': Decimal('6.70700078545385052593586382171875376948073176679737990732478462107038850387534327641573E-13'), 'quality': Decimal('12.17347164279931371838618257183153943694850460244620804953311084889375808240839303926874282806503441')}
+--------------------------------------------------
+Position: 10, Run Length: 40
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 12.041199826559248}
+Approximation: {'p': 1448, 'q': 170081111795, 'error': Decimal('1.25371671790502177712854645019908198073176679737990732478462107038850387534327641573E-16'), 'quality': Decimal('15.90180058292231301500733981365988541046696397806915504080227243984465579918887448665830686710058987')}
+--------------------------------------------------
+Position: 10, Run Length: 50
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 15.051499783199061}
+Approximation: {'p': 1448, 'q': 174163058478224, 'error': Decimal('4.71581520172066915196082359690912916926679737990732478462107038850387534327641573E-19'), 'quality': Decimal('18.32644322190720037128404071120062947698192614787274570614800047823642118070595716532656875307607924')}
+--------------------------------------------------
+Position: 10, Run Length: 60
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 18.06179973983887}
+Approximation: {'p': 1448, 'q': 178342971881701932, 'error': Decimal('6.31201498675926674095049313031986026106007521982478462107038850387534327641573E-22'), 'quality': Decimal('21.19983197864224759180563767235482570333429160818968369974818725344084989671873477653924427621855876')}
+--------------------------------------------------
+Position: 10, Run Length: 70
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 21.072099696478684}
+Approximation: {'p': 1448, 'q': 182623203206862779131, 'error': Decimal('6.2691297966558168164480982604368835292881365107856638288850387534327641573E-26'), 'quality': Decimal('25.20279273839395831069994320545673454071896374304182197687445522253247379289028041831739340016755270')}
+--------------------------------------------------
+Position: 10, Run Length: 80
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 24.082399653118497}
+Approximation: {'p': 1448, 'q': 187006160083827485830221, 'error': Decimal('4.91193311691829331377008688951706655608384112380392408723434409327641573E-28'), 'quality': Decimal('27.30874755537484377608611693683124837241506158305549136874766002145906522559374178478438333494048393')}
+--------------------------------------------------
+Position: 10, Run Length: 90
+Constraints: {'integer_valid': True, 'next_bit_valid': True, 'sqrt2_valid': True, 'all_satisfied': True}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 27.09269960975831}
+Approximation: {'p': 1448, 'q': 191494307925839345490146926, 'error': Decimal('5.21828644359988410913521345813620751649709742580099756320914454594698E-31'), 'quality': Decimal('30.28247208517055841123097435486743245581518075503688196394638364048321026554300036855974311760520639')}
+--------------------------------------------------
+Position: 10, Run Length: 100
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 30.102999566398122}
+Approximation: {'p': 1448, 'q': 196090171316059489781910452901, 'error': Decimal('2.86815419924941905962518961622433789591816243372633049939028755274E-34'), 'quality': Decimal('33.54239750360293958811205768777205289892383064543083003807350553266945565766027431622562914349886513')}
+--------------------------------------------------
+Position: 10, Run Length: 200
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 60.205999132796244}
+Approximation: {'p': 1448, 'q': 248573823367659144296582910435403110942008470788011274496189, 'error': Decimal('2.37798134072606958270808525959739899E-64'), 'quality': Decimal('63.62379155747657764333120391733838181017569739205850630337440968755109762523334965492341193906042229')}
+--------------------------------------------------
+Position: 10, Run Length: 300
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 90.30899869919436}
+Approximation: {'p': 1448, 'q': 315104756393038989797997968477450646728922344820343948942310737043695765066096864292330577, 'error': Decimal('1.83203E-94'), 'quality': Decimal('93.73706741891719619090988389548506425724665425216347965839677831610585330337349425210596450463539779')}
+--------------------------------------------------
+Position: 10, Run Length: 500
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 150.5149978319906}
+Approximation: {'p': 1448, 'q': 506353820974935637164546819716057632573189345307116724415766522124414545101656926752770515801147837200000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------
+Position: 10, Run Length: 1000
+Constraints: {'integer_valid': True, 'next_bit_valid': False, 'sqrt2_valid': True, 'all_satisfied': False}
+Theoretical: {'log2n': 3.321928094887362, 'exceeds_bound': True, 'ratio_to_bound': 301.0299956639812}
+Approximation: {'p': 1448, 'q': 1657493841851678757140790371474699763892916747742220258534186114737907986850879596741651296570220859000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 'error': Decimal('0E-99'), 'quality': Decimal('Infinity')}
+--------------------------------------------------

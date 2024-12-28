@@ -1,33 +1,22 @@
-section{Related Conjectures}
+\section{Related Conjectures}
 
 \subsection{Binary Normality}
-The distribution of zeros in $\sqrt{2}$ relates to the broader question of normality.
+The distribution of zeros in $\sqrt{2}$ relates to the broader question of normality in number theory. A number is considered normal in base 2 if every possible finite sequence of digits appears with the expected limiting frequency. This property has profound implications for the randomness and structure of the number's binary expansion.
 
-\textbf{Theorem 1 (Conditional Normality):} If the $\log_2(n)$ bound holds, then the frequency of zero
-runs of length $k$ in $\sqrt{2}$ is bounded above by $2^{-k}(1 + o(1))$.
+\textbf{Theorem 1 (Conditional Normality):} If the $\log_2(n)$ bound holds, then the frequency of zero runs of length $k$ in $\sqrt{2}$ is bounded above by $2^{-k}(1 + o(1))$. This result connects our local structural analysis to global statistical properties of the expansion, suggesting that $\sqrt{2}$ exhibits behavior characteristic of normal numbers.
 
 \subsection{Generalization to Algebraic Numbers}
-Evidence suggests similar bounds may hold for other algebraic numbers.
+Evidence suggests similar bounds may hold for other algebraic numbers, pointing to a deeper connection between algebraic degree and binary expansion properties. This generalization would establish a fundamental relationship between a number's algebraic complexity and the structure of its binary representation.
 
-\textbf{Conjecture 1 (Generalized Run Length):} For any algebraic number $\alpha$ of degree $d$, runs of
-zeros in its binary expansion are bounded by $d \log_2(n)$ at position $n$.
+\textbf{Conjecture 1 (Generalized Run Length):} For any algebraic number $\alpha$ of degree $d$, runs of zeros in its binary expansion are bounded by $d \log_2(n)$ at position $n$. This conjecture proposes that the algebraic degree directly influences the maximum possible length of consecutive zero runs, providing a quantitative measure of how algebraic complexity constrains digit patterns.
 
-\section{Future Directions}
-Several promising directions for future research include:
+\textbf{Theorem 2 (Zero Run Length Bound):} Let $n$ be a position in the binary expansion of $\sqrt{2}$, and let $k$ be the length of a run of zeros starting at position $n$. Define:
 \begin{itemize}
-    \item Establishing rigorous bounds on constraint incompatibility.
-    \item Investigating the relationship between $n$ and minimum possible discrepancies.
-    \item Analyzing the behavior of $q$ as a function of $k$ for fixed $n$.
-    \item Exploring connections to Diophantine approximation theory.
+    \item $p$ as the value of the first $n$ binary digits, representing the initial segment of the expansion.
+    \item $q$ as the value of the digits after position $n+k$, capturing the remainder of the expansion.
+    \item $c$ as a positive constant from Roth's theorem, which provides fundamental limits on rational approximation.
 \end{itemize}
 
-\textbf{Theorem 2 (Zero Run Length Bound):} Let $n$ be a position in the binary expansion of $\sqrt{2}$,
-and let $k$ be the length of a run of zeros starting at position $n$. Define:
-\begin{itemize}
-    \item $p$ as the value of the first $n$ binary digits.
-    \item $q$ as the value of the digits after position $n+k$.
-    \item $c$ as a positive constant from Roth’s theorem.
-\end{itemize}
 
 Then the following statements form a contradiction when $k > \log_2(n)$:
 \begin{enumerate}
@@ -88,3 +77,12 @@ binary expansions.
 
 \textbf{Corollary 1:} The bound $k \leq \log_2(n)$ is tight in the sense that there exist positions where
 the run length approaches $\log_2(n)$.
+
+\subsection{Future Directions}
+Several promising directions for future research include:
+\begin{itemize}
+    \item Establishing rigorous bounds on constraint incompatibility by developing new techniques in Diophantine approximation theory.
+    \item Investigating the relationship between $n$ and minimum possible discrepancies to understand the optimal approximation rates.
+    \item Analyzing the behavior of $q$ as a function of $k$ for fixed $n$ to reveal finer structural properties of the expansion.
+    \item Exploring connections to Diophantine approximation theory, particularly how the binary expansion relates to classical approximation bounds.
+\end{itemize}

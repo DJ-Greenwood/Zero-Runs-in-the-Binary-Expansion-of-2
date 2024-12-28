@@ -1,140 +1,148 @@
 from decimal import Decimal, getcontext
 import numpy as np
+import torch
 from typing import Dict, List, Tuple, Any
 from scipy.stats import entropy, kstest
 import matplotlib.pyplot as plt
 from collections import Counter
 from math import log2
 
-class NormalityAnalyzer:
+class GPUNormalityAnalyzer:
     def __init__(self, precision: int = 1_000_000):
-        """Initialize analyzer with specified precision (default 10^6)."""
+        """Initialize analyzer with specified precision and GPU support."""
         getcontext().prec = precision
         self.sqrt_2 = Decimal(2).sqrt()
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.MAX_BLOCK_SIZE = 16  # Maximum block size for full frequency analysis
+        print(f"Using device: {self.device}")
         
-    def generate_binary_expansion(self, length: int) -> str:
-        """Generate binary expansion of sqrt(2) to given length."""
+    def generate_binary_expansion(self, length: int) -> torch.Tensor:
+        """Generate binary expansion of sqrt(2) using GPU acceleration."""
         result = []
         x = self.sqrt_2
         
         for _ in range(length):
             x = x * 2
             if x >= 2:
-                result.append('1')
+                result.append(1)
                 x -= 2
             else:
-                result.append('0')
+                result.append(0)
                 
-        return ''.join(result)
+        return torch.tensor(result, dtype=torch.int8, device=self.device)
 
-    def compute_block_density(self, binary_str: str, n: int, k: int) -> float:
-        """Compute local density function ρ(n,k) as defined in equation (2)."""
-        block = binary_str[n:n+k]
-        return block.count('0') / k if len(block) == k else 0
-
-    def compute_clustering_coefficient(self, binary_str: str, n: int, k: int) -> float:
-        """Compute zero clustering coefficient C(n,k) as defined in equation (8)."""
-        block = binary_str[n:n+k]
-        if len(block) < k:
-            return 0
-        return sum(int(block[i]) * int(block[i+1]) for i in range(k-1)) / (k-1)
-
-    def analyze_block_frequencies(self, binary_str: str, block_size: int) -> Dict[str, Any]:
-        """Analyze frequencies of binary blocks for normality testing."""
-        blocks = [binary_str[i:i+block_size] 
-                 for i in range(0, len(binary_str)-block_size+1)]
-        counts = Counter(blocks)
-        total = len(blocks)
-        frequencies = {block: count/total for block, count in counts.items()}
-        expected = 1 / (2 ** block_size)
+    def analyze_block_frequencies(self, binary_tensor: torch.Tensor, block_size: int) -> Dict[str, Any]:
+        """Analyze frequencies of binary blocks using adaptive methods based on block size."""
+        if block_size > self.MAX_BLOCK_SIZE:
+            return self._analyze_large_blocks_sampling(binary_tensor, block_size)
         
-        # Compute block entropy HB(k) as defined in equation (5)
-        block_entropy = -sum(freq * log2(freq) for freq in frequencies.values() if freq > 0)
+        # For smaller blocks, use direct computation
+        stride = 1
+        blocks = binary_tensor.unfold(0, block_size, stride)
+        
+        # Convert binary blocks to decimal for counting
+        powers = torch.pow(2, torch.arange(block_size-1, -1, -1, device=self.device))
+        block_values = (blocks * powers).sum(dim=1)
+        
+        # Count frequencies
+        counts = torch.bincount(block_values, minlength=2**block_size)
+        total = float(counts.sum())
+        frequencies = counts.float() / total
+        
+        # Move to CPU for remaining calculations
+        frequencies_cpu = frequencies.cpu()
+        
+        # Compute entropy and discrepancy
+        mask = frequencies_cpu > 0
+        entropy = -torch.sum(frequencies_cpu[mask] * torch.log2(frequencies_cpu[mask])).item()
+        expected = 1.0 / (2 ** block_size)
+        discrepancy = torch.max(torch.abs(frequencies_cpu - expected)).item()
         
         return {
-            'frequencies': frequencies,
+            'frequencies': frequencies_cpu.numpy(),
             'expected': expected,
-            'discrepancy': max(abs(freq - expected) for freq in frequencies.values()),
-            'entropy': block_entropy
+            'discrepancy': discrepancy,
+            'entropy': entropy
         }
-    
-    def compute_empirical_distribution(self, values: List[float], x: float) -> float:
-        """Compute empirical distribution function FN(x)."""
-        return sum(1 for val in values if val <= x) / len(values)
 
-    def compute_discrepancy(self, values: List[float]) -> float:
-        """Compute Kolmogorov-Smirnov discrepancy DN as defined in equation (7)."""
-        sorted_values = sorted(values)
-        n = len(values)
-        max_diff = 0
+    def _analyze_large_blocks_sampling(self, binary_tensor: torch.Tensor, block_size: int) -> Dict[str, Any]:
+        """Analyze large blocks using sampling-based approach."""
+        # Use sampling for large blocks
+        max_samples = 100_000
+        length = len(binary_tensor)
+        n_possible_blocks = length - block_size + 1
         
-        for i, x in enumerate(sorted_values, 1):
-            theoretical = x  # For uniform distribution on [0,1]
-            empirical = i / n
-            max_diff = max(max_diff, abs(empirical - theoretical))
+        if n_possible_blocks > max_samples:
+            # Random sampling of starting positions
+            start_indices = torch.randperm(n_possible_blocks, device=self.device)[:max_samples]
+        else:
+            start_indices = torch.arange(n_possible_blocks, device=self.device)
             
-            if i < n:
-                max_diff = max(max_diff, abs((i/n) - sorted_values[i]))
+        # Extract sampled blocks
+        blocks = torch.stack([binary_tensor[i:i+block_size] for i in start_indices])
         
-        return max_diff
+        # Compute block statistics
+        zero_counts = (blocks == 0).float().sum(dim=1)
+        density = zero_counts / block_size
+        
+        # Move to CPU for histogram computation
+        density_cpu = density.cpu().numpy()
+        hist, bins = np.histogram(density_cpu, bins=50, density=True)
+        hist = hist / hist.sum()  # Normalize
+        
+        # Compute approximate entropy using histogram
+        mask = hist > 0
+        entropy = -np.sum(hist[mask] * np.log2(hist[mask]))
+        
+        # Estimate discrepancy using empirical CDF
+        theoretical = np.linspace(0, 1, len(hist))
+        empirical = np.cumsum(hist)
+        discrepancy = np.max(np.abs(empirical - theoretical))
+        
+        return {
+            'frequencies': hist,
+            'expected': 1.0 / len(hist),
+            'discrepancy': discrepancy,
+            'entropy': entropy
+        }
 
-    def zero_run_distribution(self, binary_str: str) -> Dict[int, float]:
-        """Analyze distribution of zero run lengths according to equation (3)."""
-        runs = []
-        current_run = 0
+    def zero_run_distribution(self, binary_tensor: torch.Tensor) -> Dict[int, float]:
+        """Analyze distribution of zero run lengths using GPU acceleration."""
+        # Find transitions from 0 to 1
+        transitions = torch.where(binary_tensor[1:] != binary_tensor[:-1])[0] + 1
+        transitions = torch.cat([torch.tensor([0], device=self.device), transitions])
         
-        for bit in binary_str:
-            if bit == '0':
-                current_run += 1
-            elif current_run > 0:
-                runs.append(current_run)
-                current_run = 0
+        # Calculate run lengths
+        run_lengths = transitions[1:] - transitions[:-1]
+        run_lengths = run_lengths[binary_tensor[transitions[:-1]] == 0]
         
-        if current_run > 0:
-            runs.append(current_run)
-            
-        counts = Counter(runs)
-        total = len(runs)
+        # Count frequencies
+        run_lengths_cpu = run_lengths.cpu().numpy()
+        counts = Counter(run_lengths_cpu)
+        total = len(run_lengths_cpu)
         return {length: count/total for length, count in counts.items()}
 
-    def compute_run_length_entropy(self, run_dist: Dict[int, float]) -> float:
-        """Compute run length entropy HR as defined in equation (6)."""
-        return -sum(p * log2(p) for p in run_dist.values() if p > 0)
-
-    def compute_theoretical_bounds(self, max_length: int) -> Dict[int, float]:
-        """Compute theoretical bounds for run lengths according to equation (4)."""
-        return {l: 2 ** (-(l+1)) for l in range(1, max_length + 1)}
-
-    def analyze_scale_dependency(self, binary_str: str, max_scale: int = 20) -> Dict[int, Dict]:
-        """Analyze patterns across different scales from 2^1 to 2^max_scale."""
-        return {
-            2**j: self.analyze_block_frequencies(binary_str, 2**j)
-            for j in range(1, min(max_scale + 1, int(log2(len(binary_str)))))
-        }
-
     def analyze_normality(self, length: int = 1_000_000) -> Dict:
-        """Comprehensive normality analysis implementing all required components."""
-        binary_expansion = self.generate_binary_expansion(length)
+        """Comprehensive normality analysis using GPU acceleration."""
+        binary_tensor = self.generate_binary_expansion(length)
         
         # Scale-dependent block analysis
-        scale_analysis = self.analyze_scale_dependency(binary_expansion)
+        max_scale = min(int(log2(length)), int(log2(self.MAX_BLOCK_SIZE * 8)))
+        scale_analysis = {
+            2**j: self.analyze_block_frequencies(binary_tensor, 2**j)
+            for j in range(1, max_scale + 1)
+        }
         
         # Zero run distribution analysis
-        run_dist = self.zero_run_distribution(binary_expansion)
-        run_length_entropy = self.compute_run_length_entropy(run_dist)
+        run_dist = self.zero_run_distribution(binary_tensor)
+        run_length_entropy = -sum(p * log2(p) for p in run_dist.values() if p > 0)
         
-        # Theoretical bounds
         max_run_length = max(run_dist.keys()) if run_dist else 0
-        theoretical_bounds = self.compute_theoretical_bounds(max_run_length)
+        theoretical_bounds = {l: 2 ** (-(l+1)) for l in range(1, max_run_length + 1)}
         
-        # Discrepancy analysis
         empirical_values = list(run_dist.values())
-        discrepancy = self.compute_discrepancy(empirical_values)
-        
-        # Statistical significance testing
         _, p_value = kstest(empirical_values, 'uniform')
         
-        # Compute O(log n/n) deviation bound
         log_n_bound = log2(length) / length
         
         return {
@@ -142,7 +150,6 @@ class NormalityAnalyzer:
             'run_distribution': run_dist,
             'run_length_entropy': run_length_entropy,
             'theoretical_bounds': theoretical_bounds,
-            'discrepancy': discrepancy,
             'statistical_tests': {
                 'ks_test_p_value': p_value,
                 'significance_level': 0.01,
@@ -184,7 +191,8 @@ class NormalityAnalyzer:
         plt.subplot(2, 2, 3)
         plt.axhline(y=results['bounds']['log_n_bound'], color='r', linestyle='--',
                    label='O(log n/n) bound')
-        plt.axhline(y=results['discrepancy'], color='b', label='Observed discrepancy')
+        plt.axhline(y=results['bounds']['max_observed_deviation'], color='b', 
+                   label='Observed discrepancy')
         plt.title('Discrepancy Analysis')
         plt.legend()
         
@@ -208,7 +216,7 @@ class NormalityAnalyzer:
             
             f.write("\\subsection{Statistical Summary}\n")
             f.write(f"KS-test p-value: {results['statistical_tests']['ks_test_p_value']:.2e}\n")
-            f.write(f"Maximum discrepancy: {results['discrepancy']:.2e}\n")
+            f.write(f"Maximum discrepancy: {results['bounds']['max_observed_deviation']:.2e}\n")
             f.write(f"Run length entropy: {results['run_length_entropy']:.2f}\n\n")
             
             f.write("\\subsection{Scale Analysis}\n")
@@ -220,10 +228,12 @@ class NormalityAnalyzer:
             f.write(f"Max observed deviation: {results['bounds']['max_observed_deviation']:.2e}\n")
 
 def main():
-    # Initialize analyzer with full precision
-    analyzer = NormalityAnalyzer()
+    # Perform normality analysis for different lengths
+    analyzer = GPUNormalityAnalyzer()
+
+    # File Path = final_paper/Code/Zero_Run_Normality_Analysis.py
+    file_path = 'final_paper/Code/data/'
     
-    # Analyze at different scales
     lengths = [10_000, 100_000, 1_000_000]
     
     for length in lengths:
@@ -232,15 +242,14 @@ def main():
         
         # Generate plots
         plt = analyzer.plot_analysis_results(results)
-        plt.savefig(f'normality_analysis_{length}.png')
+        plt.savefig(file_path + f'normality_analysis_{length}.png')
         plt.close()
         
         # Save detailed report
-        analyzer.save_report(results, f'normality_analysis_{length}.tex')
+        analyzer.save_report(results, file_path + f'normality_analysis_{length}.tex')
         
-        # Print summary statistics
         print(f"KS-test p-value: {results['statistical_tests']['ks_test_p_value']:.2e}")
-        print(f"Maximum discrepancy: {results['discrepancy']:.2e}")
+        print(f"Maximum discrepancy: {results['bounds']['max_observed_deviation']:.2e}")
         print(f"O(log n/n) bound: {results['bounds']['log_n_bound']:.2e}")
 
 if __name__ == "__main__":
