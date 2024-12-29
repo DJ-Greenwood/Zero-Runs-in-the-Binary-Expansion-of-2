@@ -1,0 +1,37 @@
+% !TEX root = Document.tex
+\input{Preamble.tex}
+\title{\centering Zero Runs in the Binary Expansion of $\sqrt{2}$: A Proof of the Logarithmic Bound and Normality Analysis}
+\author{Denzil James Greenwood}
+\date{December 2024}
+
+\begin{document}
+
+\maketitle
+
+% Input the files here
+\input{Abstract.tex}
+\input{Introduction.tex}
+\input{Mathematical_framework.tex}
+\input{Zero_Run_Analysis.tex}
+\input{Zero_Run_Normality_Analysis.tex}
+\input{geometry.tex}
+\input{Related_Conjectures.tex}
+\input{Generalized_Proof.tex}
+\input{Acknowledgements.tex}
+
+
+\newpage
+
+\input{References.tex}
+
+\newpage
+\appendix{Python Code: Zero Run Analysis Algorithm} 
+\label{sec:python_code, Zero Run Analysis Algorithm}
+\lstinputlisting[style=pythonstyle, caption={Zero Run Analysis Algorithm}, label={lst:zero_run_analysis}]{Zero_Run_Analysis_Algorithm.tex}
+
+\newpage
+\appendix{Python Code: Zero Run Normality Analysis Algorithm}
+\label{sec:python_code, Zero Run Normality Analysis Algorithm}
+\lstinputlisting[style=pythonstyle, caption={Zero Run Normality Analysis Algorithm}, label={lst:zero_run_normality_analysis}]{Zero_Run_Normality_Analysis_Algorithm.tex}
+
+\end{document}

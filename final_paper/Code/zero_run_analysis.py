@@ -1,13 +1,11 @@
 import math
-import numpy as np
-from typing import Dict, Any, List
-import matplotlib.pyplot as plt
-from decimal import Decimal, getcontext
+import cupy as cp  # Use CuPy for GPU acceleration
+from typing import List, Dict, Any
 from rich.console import Console
 from rich.table import Table
 
-class Sqrt2ZeroRunAnalyzer:
-    """Analyzes zero runs in the binary expansion of sqrt(2)."""
+class Sqrt2ZeroRunAnalyzerGPU:
+    """Analyzes zero runs in the binary expansion of sqrt(2) using GPU acceleration."""
 
     def __init__(self, precision: int = 10000):
         """
@@ -16,161 +14,169 @@ class Sqrt2ZeroRunAnalyzer:
         Args:
             precision (int): Number of decimal places for high-precision calculations.
         """
-        getcontext().prec = precision
-        self.sqrt_2 = Decimal(2).sqrt()
-        self.EPSILON = Decimal('1e-10')
+        self.precision = precision
+        self.sqrt_2 = cp.sqrt(cp.array(2))  # Use GPU to calculate sqrt(2)
 
-    def analyze_run(self, n: int, k: int) -> Dict[str, Any]:
+    def generate_binary_expansion(self) -> cp.ndarray:
         """
-        Analyze a potential zero run starting at position n of length k.
-
-        Args:
-            n (int): Starting position in the binary expansion.
-            k (int): Length of the zero run to analyze.
+        Generate the binary expansion of sqrt(2) up to the specified precision.
 
         Returns:
-            Dict[str, Any]: Analysis results including constraints and theoretical bounds.
+            cp.ndarray: Binary expansion of sqrt(2) as a GPU array.
         """
-        p = int(self.sqrt_2 * Decimal(2 ** n))
-        q = int((self.sqrt_2 - Decimal(p) / Decimal(2 ** n)) * Decimal(2 ** (n + k)))
+        sqrt2 = self.sqrt_2 % 1  # Keep only the fractional part of sqrt(2)
+        binary_expansion = cp.zeros(self.precision, dtype=cp.int8)
 
-        # Validate constraints
-        integer_check = self._check_integer_constraint(q)
-        next_bit_check = self._check_next_bit_constraint(n, k, p, q)
-        sqrt2_check = self._check_sqrt2_constraint(n, k, p, q)
+        for i in range(self.precision):
+            sqrt2 *= 2
+            binary_expansion[i] = 1 if sqrt2 >= 1 else 0
+            sqrt2 -= cp.floor(sqrt2)  # Keep only the fractional part
 
-        # Compare to theoretical bounds
-        log2n = math.log2(n) if n > 0 else 0
-        exceeds_theoretical = k > log2n
+        # Debugging: Print the first 50 digits (move to CPU for viewing)
+        print(f"Binary Expansion (First 50 Digits): {cp.asnumpy(binary_expansion[:50])}")
+        return binary_expansion
 
-        # Calculate error for Diophantine approximation
-        error = self._calculate_diophantine_error(n, k, p, q)
-
-        return {
-            'position': n,
-            'run_length': k,
-            'constraints': {
-                'integer_valid': integer_check,
-                'next_bit_valid': next_bit_check,
-                'sqrt2_valid': sqrt2_check,
-                'all_satisfied': all([integer_check, next_bit_check, sqrt2_check]),
-            },
-            'theoretical': {
-                'log2n': log2n,
-                'exceeds_bound': exceeds_theoretical,
-                'ratio_to_bound': k / log2n if log2n > 0 else Decimal('inf'),
-            },
-            'approximation': {
-                'p': p,
-                'q': q,
-                'error': Decimal(error),
-                'quality': Decimal(-error.log10() if error > 0 else float('inf')),
-            },
-        }
-
-    def _check_integer_constraint(self, q: int) -> bool:
-        """Check if q is close to an integer within EPSILON."""
-        return abs(Decimal(q) - Decimal(round(q))) < self.EPSILON
-
-    def _check_next_bit_constraint(self, n: int, k: int, p: int, q: int) -> bool:
-        """Validate that the next bit after the zero run satisfies constraints."""
-        remainder = self.sqrt_2 - Decimal(p) / Decimal(2 ** n) - Decimal(q) / Decimal(2 ** (n + k))
-        next_bit = remainder * Decimal(2 ** (n + k + 1))
-        return next_bit >= Decimal(1)
-
-    def _check_sqrt2_constraint(self, n: int, k: int, p: int, q: int) -> bool:
-        """Check if the approximation satisfies the sqrt(2) property."""
-        approx = Decimal(p) / Decimal(2 ** n) + Decimal(q) / Decimal(2 ** (n + k))
-        return abs(approx ** 2 - Decimal(2)) < self.EPSILON
-
-    def _calculate_diophantine_error(self, n: int, k: int, p: int, q: int) -> Decimal:
-        """Calculate the error in the Diophantine approximation."""
-        approx = Decimal(p) / Decimal(2 ** n) + Decimal(q) / Decimal(2 ** (n + k))
-        return abs(self.sqrt_2 - approx)
-
-    def analyze_range(self, n_values: List[int], k_values: List[int]) -> List[Dict]:
+    def detect_zero_runs(self, binary_expansion: cp.ndarray) -> List[Dict[str, int]]:
         """
-        Analyze multiple (n, k) pairs with comprehensive statistics.
+        Detect all zero runs in the binary expansion.
 
         Args:
-            n_values (List[int]): List of starting positions.
-            k_values (List[int]): List of zero run lengths.
+            binary_expansion (cp.ndarray): Binary expansion of sqrt(2).
 
         Returns:
-            List[Dict]: A list of analysis results for each (n, k) pair.
+            List[Dict[str, int]]: List of zero runs with their starting position and length.
+        """
+        zero_mask = (binary_expansion == 0).astype(cp.int32)
+        diff = cp.diff(zero_mask)
+        
+        start_positions = cp.where(diff == 1)[0] + 1
+        end_positions = cp.where(diff == -1)[0] + 1
+
+        if zero_mask[0] == 1:
+            start_positions = cp.concatenate(([0], start_positions))
+        if zero_mask[-1] == 1:
+            end_positions = cp.concatenate((end_positions, [len(binary_expansion)]))
+
+        run_lengths = end_positions - start_positions
+
+        zero_runs = [{"start": int(start + 1), "length": int(length)} 
+                     for start, length in zip(cp.asnumpy(start_positions), cp.asnumpy(run_lengths))]
+
+        print(f"Detected Zero Runs (First 10): {zero_runs[:10]}")
+        return zero_runs
+
+    def validate_zero_runs(self, zero_runs: List[Dict[str, int]]) -> List[Dict[str, Any]]:
+        """
+        Validate detected zero runs against the theoretical bound.
+
+        Args:
+            zero_runs (List[Dict[str, int]]): Detected zero runs.
+
+        Returns:
+            List[Dict[str, Any]]: Validation results for each zero run.
         """
         results = []
-        for n in n_values:
-            for k in k_values:
-                results.append(self.analyze_run(n, k))
+        for run in zero_runs:
+            n = run["start"]
+            k = run["length"]
+            theoretical_bound = math.log2(n) + 0.5
+            results.append({
+                "position": n,
+                "run_length": k,
+                "theoretical_bound": theoretical_bound,
+                "valid": k <= theoretical_bound
+            })
         return results
 
-    def generate_report(self, results: List[Dict]) -> str:
+    def generate_report(self, validation_results: List[Dict[str, Any]]):
         """
-        Generate a detailed analysis report.
+        Generate a report for zero run validation.
 
         Args:
-            results (List[Dict]): List of analysis results.
-
-        Returns:
-            str: Formatted report string.
+            validation_results (List[Dict[str, Any]]): Validation results.
         """
-        report_lines = ["Zero Run Analysis Report", "=" * 50]
-        for result in results:
-            report_lines.append(f"Position: {result['position']}, Run Length: {result['run_length']}")
-            report_lines.append(f"Constraints: {result['constraints']}")
-            report_lines.append(f"Theoretical: {result['theoretical']}")
-            report_lines.append(f"Approximation: {result['approximation']}")
-            report_lines.append("-" * 50)
-        return "\n".join(report_lines)
-
-    def generate_formatted_report(self, results):
         console = Console()
 
-        # Create a table for the report
-        table = Table(title="Zero Run Analysis Report", show_lines=True)
-        
-        # Add columns to the table
-        table.add_column("Position", justify="center", style="cyan", no_wrap=True)
-        table.add_column("Run Length", justify="center", style="cyan")
-        table.add_column("Constraints", style="green")
-        table.add_column("Theoretical", style="yellow")
-        table.add_column("Approximation", style="magenta")
+        table = Table(title="Zero Run Validation Report")
+        table.add_column("Start Position", justify="right")
+        table.add_column("Run Length", justify="right")
+        table.add_column("Theoretical Bound", justify="right")
+        table.add_column("Valid", justify="center")
 
-        # Populate the table with data
-        for result in results:
-            constraints = "\n".join(
-                [f"{key}: {value}" for key, value in result['constraints'].items()]
-            )
-            theoretical = "\n".join(
-                [f"{key}: {value}" for key, value in result['theoretical'].items()]
-            )
-            approximation = "\n".join(
-                [f"{key}: {value}" for key, value in result['approximation'].items()]
-            )
+        if not validation_results:
+            print("No zero runs detected.")
+            return
 
+        for result in validation_results:
             table.add_row(
                 str(result["position"]),
                 str(result["run_length"]),
-                constraints,
-                theoretical,
-                approximation,
+                f"{result['theoretical_bound']:.2f}",
+                "✔" if result["valid"] else "✘"
             )
-        
-        # Print the table
+
         console.print(table)
 
+    def save_report(self, file_name: str, validation_results: List[Dict[str, Any]]):
+        """
+        Save the zero run validation report to a file.
+
+        Args:
+            file_name (str): Name of the file to save the report.
+            validation_results (List[Dict[str, Any]]): Validation results.
+        """
+        with open(file_name, "w") as file:
+            file.write("Position,Run Length,Theoretical Bound,Valid\n")
+            for result in validation_results:
+                file.write(f"{result['position']},{result['run_length']},"
+                           f"{result['theoretical_bound']:.2f},{result['valid']}\n")
+        print(f"Validation report saved to {file_name}.")
+
+    def summary_report(self, file_name: str, validation_results: List[Dict[str, Any]]):
+        """
+        Generate a summary report for zero run validation and save it to a file.
+
+        Args:
+            file_name (str): Path to the output file.
+            validation_results (List[Dict[str, Any]]): Validation results.
+        """
+        total_runs = len(validation_results)
+        valid_runs = sum(1 for result in validation_results if result["valid"])
+        invalid_runs = total_runs - valid_runs
+        valid_percentage = (100 * valid_runs / total_runs) if total_runs > 0 else 0
+
+        with open(file_name, "w") as file:
+            file.write(f"Total Zero Runs: {total_runs}\n")
+            file.write(f"Valid Zero Runs: {valid_runs}\n")
+            file.write(f"Invalid Zero Runs: {invalid_runs}\n")
+            file.write(f"Valid Percentage: {valid_percentage:.2f}%\n")
+        print(f"Summary report saved to {file_name}.")
+
 if __name__ == "__main__":
-    analyzer = Sqrt2ZeroRunAnalyzer(precision=100)
+    file_path = "final_paper/Code/data/"
+    precision = 10_000_000  # Adjust precision as needed
+    analyzer = Sqrt2ZeroRunAnalyzerGPU(precision=precision)
 
-    # Define test range
-    n_values = [1, 2, 3, 4, 5, 10] #, 20, 30, 50, 100, 200, 300, 500, 1000] # Remove ] #, after "10] #" to extend the range
-    k_values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 500, 1000]
+    # Step 1: Generate binary expansion
+    print("Generating binary expansion of sqrt(2)...")
+    binary_expansion = analyzer.generate_binary_expansion()
 
-    results = analyzer.analyze_range(n_values, k_values)
+    # Step 2: Detect zero runs
+    print("Detecting zero runs...")
+    zero_runs = analyzer.detect_zero_runs(binary_expansion)
 
-    reports = analyzer.generate_formatted_report(results)
-    # Save the results to a file
-    with open("final_paper/Code/data/zero_run_analysis_report.txt", "w") as file:
-        file.write(analyzer.generate_report(results))
-    print(reports)
+    # Step 3: Validate zero runs
+    print("Validating zero runs against theoretical bounds...")
+    validation_results = analyzer.validate_zero_runs(zero_runs)
+
+    # Step 4: Generate and display report
+    print("Generating report...")
+    analyzer.generate_report(validation_results)
+
+    # Step 5: Save report to file
+    print("Saving validation report to file...")
+    analyzer.save_report(file_path + "zero_run_validation_report.csv", validation_results)
+
+    # Step 6: Save summary report
+    print("Saving summary report to file...")
+    analyzer.summary_report(file_path + "zero_run_summary_report.txt", validation_results)

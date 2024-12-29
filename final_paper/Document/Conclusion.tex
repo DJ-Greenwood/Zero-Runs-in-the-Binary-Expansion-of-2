@@ -1,0 +1,43 @@
+\section{Zero Runs Normality Analysis}
+
+The \texttt{AnalyzeNormality} procedure investigates how zero runs are distributed in the binary
+expansion of $\sqrt{2}$. This analysis examines:
+\begin{enumerate}
+    \item \textbf{Block Analysis}: Examining different-sized chunks (or blocks) of the binary expansion to
+    understand how zeros group together at various scales.
+    \item \textbf{Distribution Analysis}: Mapping the frequency of zero runs of different lengths and
+    comparing these frequencies to mathematical predictions.
+    \item \textbf{Entropy Calculation}: Measuring the randomness or order of zero runs, where lower
+    entropy suggests more structured patterns, and higher entropy indicates randomness.
+    \item \textbf{Discrepancy Analysis}: Calculating deviations from theoretical predictions to validate
+    mathematical models.
+    \item \textbf{Overall Pattern Structure}: Combining entropy measurements across the expansion to
+    provide a comprehensive view of the structured nature of zero runs.
+\end{enumerate}
+
+The results from this analysis provide key evidence for the conjecture, supporting the
+argument that zero runs in $\sqrt{2}$’s binary expansion follow specific, predictable patterns
+bounded by the $\log_2(n)$ relationship.
+
+\subsection{Summary of Findings}
+Analysis of zero runs at various positions revealed:
+\begin{itemize}
+    \item \textbf{Position Impact}:
+        \begin{itemize}
+            \item At position 1: First valid run lengths start at 2.
+            \item At position 2: Run lengths of 40-50 achieve all constraint satisfaction.
+            \item At positions 3-5: Progressive increase in minimum run lengths needed for constraint
+            satisfaction.
+            \item At positions 10+: Longer run lengths required for constraint satisfaction.
+        \end{itemize}
+    \item \textbf{Constraint Satisfaction}:
+        \begin{itemize}
+            \item Integer validity was consistently maintained across all positions.
+            \item Next bit validity showed periodic patterns.
+            \item $\sqrt{2}$ validity required longer run lengths at higher positions.
+            \item Full constraint satisfaction was achieved most frequently at position 2.
+        \end{itemize}
+\end{itemize}
+
+This analysis reveals that while longer run lengths generally improve approximation quality,
+the position significantly impacts the efficiency and effectiveness of these approximations.

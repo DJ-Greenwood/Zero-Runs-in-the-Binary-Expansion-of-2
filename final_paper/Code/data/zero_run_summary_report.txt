@@ -1,0 +1,4 @@
+Total Zero Runs: 24970
+Valid Zero Runs: 24968
+Invalid Zero Runs: 2
+Valid Percentage: 99.99%
