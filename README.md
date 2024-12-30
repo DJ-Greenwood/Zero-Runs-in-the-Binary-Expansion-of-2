@@ -11,12 +11,6 @@ final_paper/
 ├── Abstract.tex
 ├── Acknowledgements.tex
 ├── Algorithm_Design_and_Implementation.tex
-├── Code/
-│   ├── __init__.py
-│   ├── a.py
-│   ├── extended_sqrt2_analyzer.py
-│   ├── extended_zero_run_analysis.py
-│   └── precision_optimized_analyzer.py
 ├── Conclusion.tex
 ├── Document.aux
 ├── Document.fdb_latexmk
@@ -28,11 +22,21 @@ final_paper/
 ├── Mathematical_framework.tex
 ├── Preamble.tex
 ├── Related_Conjectures.tex
-├── svg/
-└── test_4.tex
-LICENSE
-README.md
+├── test_4.tex
+├── LICENSE
+├── README.md
+├── Code/
+│   ├── __init__.py
+│   ├── a.py
+│   ├── extended_sqrt2_analyzer.py
+│   ├── extended_zero_run_analysis.py
+│   ├── precision_optimized_analyzer.py
+│   ├── summary_report.py
+│   └── Zero_Run_Analysis.py
+└── svg/
+    └── geometry.svg
 ```
+
 
 ### LaTeX Files
 
