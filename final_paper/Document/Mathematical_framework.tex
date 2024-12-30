@@ -1,7 +1,7 @@
 \section{Mathematical Framework}
 
 \subsection{Representation of Zero Runs}
-The binary expansion of $\sqrt{2}$ is an infinite sequence of 0s and 1s that, when interpreted as a binary number, equals $\sqrt{2}$. In this expansion, we occasionally encounter consecutive sequences of zeros, which we call ``zero runs.'' To analyze these patterns mathematically, we need a precise way to represent them.
+The binary expansion of $\sqrt{2}$ is an infinite sequence of 0s and 1s that, when interpreted as a binary number, equals $\sqrt{2}$. In this expansion, we occasionally encounter consecutive sequences of zeros, which we call "zero runs." To analyze these patterns mathematically, we need a precise way to represent them.
 
 Consider a specific position $n$ in this binary expansion where we observe a run of $k$ consecutive zeros. We can represent this portion of $\sqrt{2}$ as:
 \[
@@ -15,82 +15,94 @@ where:
 \end{itemize}
 
 \subsection{Key Equations}
-Our analysis begins with the representation developed above. Through a series of algebraic transformations, we convert this representation into a form that reveals important properties of these zero runs.
-
-Starting with our representation:
+Starting from the representation:
 \[
 \sqrt{2} = \frac{p}{2^n} + \frac{q}{2^{n+k}}
 \]
+we perform the following transformations to simplify and reveal important properties.
 
-To eliminate fractions and simplify our analysis, we multiply both sides by $2^n$:
+1. \textbf{Eliminate Fractions}: Multiply both sides by $2^n$:
 \[
-2^n \sqrt{2} = p + \frac{q}{2^k}
+2^n \sqrt{2} = p + \frac{q}{2^k}.
 \]
 
-Since we're working with $\sqrt{2}$, squaring both sides allows us to eliminate the irrational number:
+2. \textbf{Remove the Irrational Term}: Square both sides:
 \[
-(2^n \sqrt{2})^2 = \left(p + \frac{q}{2^k}\right)^2
+(2^n \sqrt{2})^2 = \left(p + \frac{q}{2^k}\right)^2.
 \]
 
-Expanding the right side using the square of a binomial and simplifying the left side:
+3. \textbf{Expand and Simplify}: Using the binomial expansion:
 \[
-2^{2n} \cdot 2 = p^2 + \frac{2pq}{2^k} + \frac{q^2}{2^{2k}}
+2^{2n} \cdot 2 = p^2 + \frac{2pq}{2^k} + \frac{q^2}{2^{2k}}.
 \]
 
-Rearranging to isolate terms with different powers of 2:
+4. \textbf{Isolate Terms}: Rearrange to group powers of 2:
 \[
-2^{2n+1} - p^2 = \frac{2pq}{2^k} + \frac{q^2}{2^{2k}}
+2^{2n+1} - p^2 = \frac{2pq}{2^k} + \frac{q^2}{2^{2k}}.
 \]
 
-To work with integer values, we multiply all terms by $2^{2k}$:
+5. \textbf{Work with Integers}: Multiply through by $2^{2k}$ to avoid fractions:
 \[
-2^{2n+2k+1} - p^2 \cdot 2^{2k} = 2pq \cdot 2^k + q^2
+2^{2n+2k+1} - p^2 \cdot 2^{2k} = 2pq \cdot 2^k + q^2.
 \]
 
-This final equation, expressed entirely in integers, provides a powerful tool for analyzing the relationships between $n$, $k$, $p$, and $q$, ultimately allowing us to establish constraints on the possible lengths of zero runs.
+This final form is expressed entirely in integers, allowing us to analyze the relationships between $n$, $k$, $p$, and $q$.
 
 \subsection{Fundamental Lemmas}
-The behavior of zero runs in the binary expansion of $\sqrt{2}$ is governed by deep properties from number theory. The following lemmas connect classical results about Diophantine approximation to specific properties of binary expansions.
+The following lemmas provide bounds on the behavior of zero runs in the binary expansion of $\sqrt{2}$, connecting them to classical results in number theory.
 
-\textbf{Lemma 1: Rational Approximation Bound.} 
-This lemma establishes a fundamental limit on how well $\sqrt{2}$ can be approximated by rational numbers of the form $\frac{p}{2^n}$. Specifically, for any position $n$ and run length $k$, if $\frac{p}{2^n}$ approximates $\sqrt{2}$, then:
+\textbf{Lemma 1: Rational Approximation Bound.}  
+For any position $n$ and run length $k$, the error in approximating $\sqrt{2}$ by $\frac{p}{2^n}$ satisfies:
 \[
-\left|\sqrt{2} - \frac{p}{2^n}\right| > \frac{c}{2^{2n}}
+\left|\sqrt{2} - \frac{p}{2^n}\right| > \frac{c}{2^{2n}},
 \]
-for some constant $c > 0$.
+where $c > 0$ is a constant.
 
-\textit{Intuition:} This bound tells us that when we truncate the binary expansion of $\sqrt{2}$ at position $n$ (getting a rational approximation $\frac{p}{2^n}$), the error can't be smaller than $\frac{c}{2^{2n}}$. The exponent 2 appears because $\sqrt{2}$ is algebraic of degree 2.
+\textit{Intuitive Explanation:}  
+This lemma ensures that the binary approximation of $\sqrt{2}$ cannot be too precise. Since $\sqrt{2}$ is algebraic of degree 2, Roth's theorem limits the quality of rational approximations, and this bound reflects that limit.
 
-\textit{Proof.} We proceed by contradiction. Assume no such $c$ exists. Then for any $\epsilon > 0$, there exist infinitely many $n$ with:
+\textit{Proof (Simplified):}  
+1. Assume the contrary: that the error is smaller than $\frac{c}{2^{2n}}$ for infinitely many $n$.
+2. Such an error would contradict Roth's theorem, which states that algebraic numbers cannot be approximated by rationals with error smaller than $\frac{1}{2^{(2+\delta)n}}$ for any $\delta > 0$. 
+3. Therefore, the stated bound must hold. \qed
+
+\textbf{Lemma 2: Zero Run Length Bound.}  
+For a zero run of length $k$ starting at position $n$:
 \[
-\left|\sqrt{2} - \frac{p}{2^n}\right| < \frac{\epsilon}{2^{2n}}
+k < 2 \log_2(n) + O(1).
 \]
-This would provide approximations violating Roth's theorem, which states that algebraic numbers of degree 2 cannot be approximated by rationals with error better than $\frac{1}{2^{(2+\delta)n}}$ for any $\delta > 0$. \qed
 
-\textbf{Lemma 2: Zero Run Length Bound.} 
-This lemma translates the approximation bound into a concrete limit on zero run lengths. For a zero run of length $k$ starting at position $n$:
+\textit{Intuitive Explanation:}  
+A long zero run implies using the same rational approximation for many consecutive bits, which increases the approximation error. This lemma limits the length of such runs relative to their starting position.
+
+\textit{Proof (Simplified):}  
+1. The error due to a zero run of length $k$ is at least:
 \[
-k < 2 \log_2(n) + O(1)
+\frac{1}{2^{n+k+1}},
 \]
+because the next bit after the zero run must be 1.
 
-\textit{Intuition:} A long run of zeros means we're using the same rational approximation for many bits. This lemma shows that such runs cannot be too long relative to their position in the expansion.
-
-\textit{Proof.} The key insight is that if we have a run of $k$ zeros starting at position $n$, then:
-\begin{itemize}
-    \item The approximation error must be at least $\frac{1}{2^{n+k+1}}$ (since the next bit is 1)
-    \item But by Lemma 1, the error is also less than $\frac{c}{2^{2n}}$
-\end{itemize}
-Therefore:
+2. By Lemma 1, the error must also satisfy:
 \[
-\frac{1}{2^{n+k+1}} < \left|\sqrt{2} - \frac{p}{2^n}\right| < \frac{c}{2^{2n}}
+\left|\sqrt{2} - \frac{p}{2^n}\right| < \frac{c}{2^{2n}}.
 \]
-Taking logarithms and solving for $k$ yields the result. \qed
 
-These lemmas connect three different perspectives:
+3. Combining these bounds:
+\[
+\frac{1}{2^{n+k+1}} < \frac{c}{2^{2n}}.
+\]
+
+4. Taking logarithms:
+\[
+k < 2 \log_2(n) + O(1).
+\] \qed
+
+\subsection{Connecting Lemmas to Zero Run Patterns}
+These lemmas highlight the relationship between:
 \begin{enumerate}
-    \item The abstract theory of Diophantine approximation (Roth's theorem)
-    \item Rational approximations of $\sqrt{2}$
-    \item The concrete structure of zero runs in the binary expansion
+    \item Diophantine approximation theory (e.g., Roth's theorem),
+    \item Rational approximations of $\sqrt{2}$, and
+    \item The structural constraints on zero runs in the binary expansion.
 \end{enumerate}
 
-The logarithmic bound on zero run lengths shows that while arbitrarily long runs of zeros can occur, they become increasingly rare as we progress further in the expansion. This provides a quantitative measure of the complexity in the binary expansion of $\sqrt{2}$.
+The logarithmic bound on zero run lengths indicates that while arbitrarily long runs can occur, their likelihood decreases significantly at higher positions in the binary expansion. This provides a clear measure of the complexity inherent in the binary representation of $\sqrt{2}$.

@@ -2,7 +2,35 @@
 
 Building upon our previous examination of the binary expansion properties of $\sqrt{2}$, we now turn to a detailed analysis of zero run distributions. This analysis provides crucial insights into the structural patterns that emerge in the binary representation, offering a complementary perspective to the frequency analysis presented in Sections 3.1-3.9.
 
-\subsubsection{Motivation and Connection to Previous Analysis}
+\subsection{Zero Run Normality Algorithm}
+Building upon our previous work, the Zero Run Normality Algorithm analyzes the distribution of zero runs to evaluate normality properties.
+
+\subsubsection{Algorithm Workflow}
+We summarize the algorithm as pseudocode for clarity:
+
+\begin{algorithm}[H]
+\caption{Zero Run Normality Analysis}
+\begin{algorithmic}[1]
+\State \textbf{Input:} Binary expansion of $\sqrt{2}$ up to $N$ digits
+\State Compute the frequency of zero runs of each length $k$
+\For{each run length $k$}
+    \State Compute distribution $P(k)$
+    \State Compare with theoretical prediction $P_{\text{theoretical}}(k) = 2^{-(k+1)}$
+\EndFor
+\State Perform statistical tests (e.g., Kolmogorov-Smirnov)
+\State \textbf{Output:} Deviations, entropy values, and normality test results
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection{Flowchart}
+A high-level flowchart (Figure \ref{fig:normality_flowchart}) is provided for better understanding:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{flowchart_Zero_Run_Normality_Analysis.png}
+    \caption{Flowchart of the Zero Run Normality Analysis Algorithm.}
+    \label{fig:normality_flowchart}
+\end{figure}\subsubsection{Motivation and Connection to Previous Analysis}
 The study of zero runs directly extends our understanding of digit patterns discussed in Section 3.3 by examining consecutive sequences of zeros rather than individual digit frequencies. This approach reveals deeper structural properties that are not immediately apparent from simple frequency analysis:
 
 \begin{itemize}

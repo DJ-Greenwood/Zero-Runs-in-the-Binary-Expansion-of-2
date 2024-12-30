@@ -20,6 +20,32 @@ demonstrated in the paper’s analysis, when $k$ (the length of a zero run) exce
 position $n$, these constraints become fundamentally incompatible, providing strong evidence
 for the paper’s central conjecture.
 
+\subsection{Algorithm Workflow}
+To improve accessibility, we present a high-level pseudocode summary of the algorithm:
+
+\begin{algorithm}[H]
+\caption{Zero Run Analysis Algorithm}
+\begin{algorithmic}[1]
+\State \textbf{Input:} Position $n$, potential zero run length $k$
+\State Compute binary approximation of $\sqrt{2}$ up to position $n$
+\State Extract $p$ (leading binary digits) and $q$ (subsequent digits after $n+k$)
+\For{$k = 1$ to $\log_2(n)$}
+    \State Check \texttt{integerOK} constraint: Ensure $q$ is valid
+    \State Check \texttt{nextBitOK} constraint: Verify next bit is 1
+    \State Check \texttt{sqrt2OK} constraint: Approximation squares to 2
+\EndFor
+\State \textbf{Output:} Valid zero run lengths satisfying all constraints
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Flowchart}
+The algorithm's high-level flowchart (Figure \ref{fig:zero_run_flowchart}) illustrates the iterative process of validating zero run lengths against the three constraints.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{Zero_Run_analysis_Flow_Chart.png}
+\caption{High-level flowchart of the Zero Run Analysis Algorithm.}
+\label{fig:zero_run_flowchart}
+\end{figure}
 
 \subsection{Empirical Analysis of Zero Run Bounds}
 The \texttt{$Zero\_Run\_Analysis$} procedure provides a comprehensive empirical analysis of zero runs in the binary expansion of $\sqrt{2}$. By systematically validating the three fundamental constraints, the algorithm ensures the integrity of the binary representation and the accuracy of the zero run approximation. The theoretical bounds are used to compare the observed zero run lengths, providing a robust empirical foundation for the $\log_2(n)$ bound conjecture. This algorithmic approach, combined with extensive computational analysis, offers compelling evidence for the fundamental properties of zero runs in the binary expansion of $\sqrt{2}$.

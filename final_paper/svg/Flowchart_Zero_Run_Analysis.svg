@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+    <!-- Background -->
+    <rect width="800" height="1000" fill="white"/>
+    
+    <!-- Start -->
+    <rect x="350" y="20" width="100" height="40" rx="20" fill="#99ff99" stroke="black"/>
+    <text x="400" y="45" text-anchor="middle" font-family="Arial" font-size="14">Start</text>
+    
+    <!-- Input -->
+    <path d="M320 80 L500 80 L480 120 L300 120 Z" fill="white" stroke="black"/>
+    <text x="400" y="105" text-anchor="middle" font-family="Arial" font-size="14">
+        <tspan x="400" dy="-6">Input:</tspan>
+        <tspan x="400" dy="16">n (position), k (run length)</tspan>
+    </text>
+    
+    <!-- Compute sqrt(2) -->
+    <rect x="300" y="140" width="200" height="50" fill="white" stroke="black"/>
+    <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="14">
+        Calculate √2 to n digits
+    </text>
+    
+    <!-- Extract p and q -->
+    <rect x="300" y="210" width="200" height="70" fill="white" stroke="black"/>
+    <text x="400" y="235" text-anchor="middle" font-family="Arial" font-size="14">
+        <tspan x="400" dy="0">Split binary digits:</tspan>
+        <tspan x="400" dy="20">p (prefix), q (k zeros)</tspan>
+    </text>
+    
+    <!-- For Loop Entry -->
+    <path d="M400 300 L470 340 L400 380 L330 340 Z" fill="white" stroke="black"/>
+    <text x="400" y="345" text-anchor="middle" font-family="Arial" font-size="14">
+        k ≤ log₂(n)?
+    </text>
+    
+    <!-- Constraint Checks with Decision Points -->
+    <!-- IntegerOK -->
+    <path d="M400 400 L500 440 L400 480 L300 440 Z" fill="white" stroke="black"/>
+    <text x="400" y="435" text-anchor="middle" font-family="Arial" font-size="14">
+        <tspan x="400" dy="0">Valid Binary?</tspan>
+        <tspan x="400" dy="16" font-size="12">(q forms valid fraction)</tspan>
+    </text>
+    
+    <!-- NextBitOK -->
+    <path d="M400 500 L500 540 L400 580 L300 540 Z" fill="white" stroke="black"/>
+    <text x="400" y="535" text-anchor="middle" font-family="Arial" font-size="14">
+        <tspan x="400" dy="0">Ends with 1?</tspan>
+        <tspan x="400" dy="16" font-size="12">(after k zeros)</tspan>
+    </text>
+    
+    <!-- Sqrt2OK -->
+    <path d="M400 600 L500 640 L400 680 L300 640 Z" fill="white" stroke="black"/>
+    <text x="400" y="635" text-anchor="middle" font-family="Arial" font-size="14">
+        <tspan x="400" dy="0">Squares to 2?</tspan>
+        <tspan x="400" dy="16" font-size="12">(valid √2 approximation)</tspan>
+    </text>
+    
+    <!-- Increment k -->
+    <rect x="300" y="700" width="200" height="40" fill="white" stroke="black"/>
+    <text x="400" y="725" text-anchor="middle" font-family="Arial" font-size="14">Increment k</text>
+    
+    <!-- Output -->
+    <path d="M300 780 L520 780 L510 830 L290 830 Z" fill="white" stroke="black"/>
+    <text x="400" y="810" text-anchor="middle" font-family="Arial" font-size="14">
+        <tspan x="400" dy="-6">Returns a report</tspan>
+        <tspan x="405" dy="16">for k.</tspan>
+    </text>
+    
+    <!-- End -->
+    <rect x="350" y="860" width="100" height="40" rx="20" fill="#ff9999" stroke="black"/>
+    <text x="400" y="885" text-anchor="middle" font-family="Arial" font-size="14">End</text>
+    
+    <!-- Arrows and markers -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+        </marker>
+    </defs>
+    
+    <!-- Main flow arrows -->
+    <line x1="400" y1="60" x2="400" y2="80" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="400" y1="120" x2="400" y2="140" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="400" y1="190" x2="400" y2="210" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="400" y1="280" x2="400" y2="300" stroke="black" marker-end="url(#arrowhead)"/>
+    
+    <!-- Loop and constraint check flow -->
+    <line x1="400" y1="380" x2="400" y2="400" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="400" y1="480" x2="400" y2="500" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="400" y1="580" x2="400" y2="600" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="400" y1="680" x2="400" y2="700" stroke="black" marker-end="url(#arrowhead)"/>
+    
+    <!-- Loop back path -->
+    <path d="M400 740 L400 760 L600 760 L600 340 L470 340" fill="none" stroke="black" marker-end="url(#arrowhead)"/>
+    
+
+    <!-- Final flow -->
+    <line x1="400" y1="830" x2="400" y2="860" stroke="black" marker-end="url(#arrowhead)"/>
+    
+    <!-- Loop exit path -->
+    <path d="M330 340 L150 340 L150 780 L300 780" fill="none" stroke="black" marker-end="url(#arrowhead)"/>
+    
+    <!-- Labels -->
+    <text x="530" y="750" text-anchor="start" font-family="Arial" font-size="12">Next k</text>
+    <text x="150" y="320" text-anchor="middle" font-family="Arial" font-size="12">All k tested</text>
+  
+</svg>

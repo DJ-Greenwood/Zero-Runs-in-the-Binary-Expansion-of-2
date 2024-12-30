@@ -11,6 +11,8 @@
 % Graphics and visualization
 \usepackage{graphicx}
 \usepackage{tikz}
+\usetikzlibrary{shapes.geometric, shapes.misc, arrows.meta, positioning, calc}
+
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 
@@ -25,6 +27,10 @@
 \usepackage{float}
 \usepackage{fullpage}
 \usepackage{titlesec}
+\usepackage{caption}
+
+% Markdown support
+\usepackage{markdown}
 
 % References and links (load last)
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
@@ -67,7 +73,8 @@
 \newtheorem{remark}[theorem]{Remark}
 
 % Graphic path
-\graphicspath{{./Code/data/}}
+\graphicspath{{../Code/data/}}
+
 
 
 % Common mathematical notation
