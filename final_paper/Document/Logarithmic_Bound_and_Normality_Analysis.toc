@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Mathematical Framework}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Representation of Zero Runs}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Key Equations}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Fundamental Lemmas}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Connecting Lemmas to Zero Run Patterns}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Algorithm Design and Implementation}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Zero Run Analysis Explanation}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Algorithm Workflow}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Flowchart}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Empirical Analysis of Zero Run Bounds}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Empirical Findings}{8}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Position-Specific Results}{8}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Constraint Analysis}{8}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Computational Verification}{9}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Zero Run Analysis Conclusion}{9}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Zero Runs Normality Analysis}{9}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Zero Run Normality Algorithm}{10}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}Algorithm Workflow}{10}{subsubsection.3.11.1}%
+\contentsline {subsubsection}{\numberline {3.11.2}Flowchart}{10}{subsubsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.3}Motivation and Connection to Previous Analysis}{12}{subsubsection.3.11.3}%
+\contentsline {subsubsection}{\numberline {3.11.4}Methodological Framework}{12}{subsubsection.3.11.4}%
+\contentsline {section}{\numberline {4}Empirical Normality Analysis}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Connection to Normality Properties}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Implementation Requirements}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Results and Interpretation}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Geometric Representation of $\sqrt {2}$ in Binary}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Visual Overview}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Binary Expansion and Approximation}{16}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Geometric Constraint on Zero Runs}{16}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Connecting Zero Runs to the Diagram}{17}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Related Conjectures}{17}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Binary Normality}{17}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Generalization to Algebraic Numbers}{17}{subsection.6.2}%

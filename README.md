@@ -8,6 +8,14 @@ This repository contains the LaTeX source files and Python code for the paper ti
 
 ```
 final_paper/
+├── Code/
+│   ├── __init__.py
+│   ├── a.py
+│   ├── extended_sqrt2_analyzer.py
+│   ├── extended_zero_run_analysis.py
+│   ├── precision_optimized_analyzer.py
+│   ├── summary_report.py
+│   └── Zero_Run_Analysis.py
 ├── Abstract.tex
 ├── Acknowledgements.tex
 ├── Algorithm_Design_and_Implementation.tex
@@ -25,14 +33,7 @@ final_paper/
 ├── test_4.tex
 ├── LICENSE
 ├── README.md
-├── Code/
-│   ├── __init__.py
-│   ├── a.py
-│   ├── extended_sqrt2_analyzer.py
-│   ├── extended_zero_run_analysis.py
-│   ├── precision_optimized_analyzer.py
-│   ├── summary_report.py
-│   └── Zero_Run_Analysis.py
+
 └── svg/
     └── geometry.svg
 ```
