@@ -258,6 +258,10 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/markdown/markdown.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/markdown/markdown.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -271,8 +275,6 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/markdown/markdownthemewitiko_markdown
 INPUT c:/texlive/2024/texmf-dist/tex/generic/markdown/markdownthemewitiko_markdown_defaults.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/markdown/markdownthemewitiko_markdown_defaults.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/markdown/markdownthemewitiko_markdown_defaults.tex
-INPUT c:/texlive/2024/texmf-dist/tex/latex/paralist/paralist.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/paralist/paralist.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple-legacy.sty
@@ -462,6 +464,9 @@ INPUT Related_Conjectures.tex
 INPUT ./Acknowledgements.tex
 INPUT ./Acknowledgements.tex
 INPUT Acknowledgements.tex
+INPUT ./Logarithmic_Bound_and_Normality_Analysis.bbl
+INPUT ./Logarithmic_Bound_and_Normality_Analysis.bbl
+INPUT Logarithmic_Bound_and_Normality_Analysis.bbl
 INPUT ./Zero_Run_Analysis_Algorithm.tex
 INPUT ./Zero_Run_Analysis_Algorithm.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm

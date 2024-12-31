@@ -1,5 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1735594508.91408 "d:/Github/ZRESQRT2/Zero-Runs-in-the-Binary-Expansion-of-2/final_paper/Document/Logarithmic_Bound_and_Normality_Analysis.tex" "Logarithmic_Bound_and_Normality_Analysis.pdf" "Logarithmic_Bound_and_Normality_Analysis" 1735594511.18008 0
+["bibtex Logarithmic_Bound_and_Normality_Analysis"] 1735649980.85075 "Logarithmic_Bound_and_Normality_Analysis.aux" "Logarithmic_Bound_and_Normality_Analysis.bbl" "Logarithmic_Bound_and_Normality_Analysis" 1735649984.23005 0
+  "./bibliography.bib" 1735649980 2220 ac5aadc89d708970d94d6faa4537f841 ""
+  "Logarithmic_Bound_and_Normality_Analysis.aux" 1735649983 7890 6cccd2e4ecf91711814f4624dc395436 "pdflatex"
+  "c:/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1734813622 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  (generated)
+  "Logarithmic_Bound_and_Normality_Analysis.bbl"
+  "Logarithmic_Bound_and_Normality_Analysis.blg"
+  (rewritten before read)
+["pdflatex"] 1735649981.19734 "d:/Github/ZRESQRT2/Zero-Runs-in-the-Binary-Expansion-of-2/final_paper/Document/Logarithmic_Bound_and_Normality_Analysis.tex" "Logarithmic_Bound_and_Normality_Analysis.pdf" "Logarithmic_Bound_and_Normality_Analysis" 1735649984.23037 0
   "../Code/data/Zero_Run_analysis_Flow_Chart.png" 1735565824 80166 2cd5fe8cf6a60898d467de9dcfd1cf1a ""
   "../Code/data/flowchart_Zero_Run_Normality_Analysis.png" 1735568078 96122 76d9ca07b18bb24e263eb8fdcfdd9b15 ""
   "../Code/data/geometric_diagram_illustrates.png" 1735517820 239359 5baaf7c6324929d9d6560623f059c472 ""
@@ -7,12 +15,13 @@
   "Abstract.tex" 1735518756 1001 0edec7f1cdbfdf440ddc5cd559aba4f9 ""
   "Acknowledgements.tex" 1735421748 387 a604fb36189a9e3e4b0c2649cc7cddad ""
   "Introduction.tex" 1735518783 2278 e766f48e27b572d802e30687235e4dbc ""
-  "Logarithmic_Bound_and_Normality_Analysis.aux" 1735594511 7219 5c5f73d99cb43a2e0469f14dcfaec82a "pdflatex"
-  "Logarithmic_Bound_and_Normality_Analysis.out" 1735594511 6527 03a8fade2cb40a426ab5df9a8aec8096 "pdflatex"
-  "Logarithmic_Bound_and_Normality_Analysis.tex" 1735594506 1322 40962db9f13b1540dce836c1b4feb87b ""
-  "Logarithmic_Bound_and_Normality_Analysis.toc" 1735594511 3131 9da9261d7493a4570052667161080ef8 "pdflatex"
+  "Logarithmic_Bound_and_Normality_Analysis.aux" 1735649983 7890 6cccd2e4ecf91711814f4624dc395436 "pdflatex"
+  "Logarithmic_Bound_and_Normality_Analysis.bbl" 1735649981 1837 88bd264fd6011baa643201e6c0d8801b "bibtex Logarithmic_Bound_and_Normality_Analysis"
+  "Logarithmic_Bound_and_Normality_Analysis.out" 1735649983 6717 50442dd8eb91c26d98b520e555d258a5 "pdflatex"
+  "Logarithmic_Bound_and_Normality_Analysis.tex" 1735649804 1709 d06cb17d9ead0ccacdb0417375c48a7b ""
+  "Logarithmic_Bound_and_Normality_Analysis.toc" 1735649983 3237 9c1d847a4bf25ec2da019cb6ba6fa51f "pdflatex"
   "Mathematical_framework.tex" 1735520698 4540 0502fe320711df56f2f2c42ac8fc39dd ""
-  "Preamble.tex" 1735591491 2273 63fa2429fa92de36dd91cec77a6aae53 ""
+  "Preamble.tex" 1735608543 2373 71cd1c756f0d2cc7552da54f34613b50 ""
   "Related_Conjectures.tex" 1735591810 3938 d608fa956f7a1fb50d9ceb8ecede70dd ""
   "Zero_Run_Analysis.tex" 1735566088 8193 92c8395913f3b17e37c6f65ca421b802 ""
   "Zero_Run_Analysis_Algorithm.tex" 1735390750 7105 a24ac082b1cd7ef2de9d21ead0c93e7f ""
@@ -203,9 +212,11 @@
   "c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo" 1734815103 8449 c69e49af7cb761638914bc5dddad142a ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty" 1734813741 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty" 1734813741 72619 ee90b6612147680fd73c3b1406a74245 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty" 1734813741 12494 0c0cdb824278a4d51cefeb2e79901315 ""
   "c:/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple-legacy.sty" 1734814041 25524 36deec441333daa43c598a9da6dd0dbc ""
   "c:/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple.sty" 1734814041 1711 0327fb85bb075bcab4a8e3e064826462 ""
   "c:/texlive/2024/texmf-dist/tex/latex/doi/doi.sty" 1734814185 3659 31067759b0a774eb3e729b6ef72bad57 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty" 1734814332 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1734814351 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1734814387 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "c:/texlive/2024/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty" 1734814457 43712 c3d93734f3bc56e03c21b3dc69268d3c ""
@@ -238,7 +249,6 @@
   "c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty" 1734815223 353 9024412f43e92cd5b21fe9ded82d0610 ""
   "c:/texlive/2024/texmf-dist/tex/latex/markdown/markdown.sty" 1734815379 11370 b0eaad3d88f82f271344a435b63b3ebb ""
   "c:/texlive/2024/texmf-dist/tex/latex/markdown/markdownthemewitiko_markdown_defaults.sty" 1734815379 34689 bc9d1e402eaa48c312b63886d6534ba1 ""
-  "c:/texlive/2024/texmf-dist/tex/latex/paralist/paralist.sty" 1734815749 14857 82c76ebe8f06becf69ab309565b2a0cb ""
   "c:/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1734815821 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "c:/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1734815821 373 00b204b1d7d095b892ad31a7494b0373 ""
   "c:/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1734815821 21013 f4ff83d25bb56552493b030f27c075ae ""
@@ -261,7 +271,7 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1734821727 5531417 afafd3ba8f822fda36e3585e3807683b ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1734821826 3343611 c2135307307c164069b1c954219382d3 ""
   "c:/texlive/2024/texmf.cnf" 1734821713 713 e69b156964470283e0530f5060668171 ""
-  "d:/Github/ZRESQRT2/Zero-Runs-in-the-Binary-Expansion-of-2/final_paper/Document/Logarithmic_Bound_and_Normality_Analysis.tex" 1735594506 1322 40962db9f13b1540dce836c1b4feb87b ""
+  "d:/Github/ZRESQRT2/Zero-Runs-in-the-Binary-Expansion-of-2/final_paper/Document/Logarithmic_Bound_and_Normality_Analysis.tex" 1735649804 1709 d06cb17d9ead0ccacdb0417375c48a7b ""
   "geometry.tex" 1735521692 4271 24f0c4dade17b0ee14ffb96e6bf6ff85 ""
   (generated)
   "Logarithmic_Bound_and_Normality_Analysis.aux"

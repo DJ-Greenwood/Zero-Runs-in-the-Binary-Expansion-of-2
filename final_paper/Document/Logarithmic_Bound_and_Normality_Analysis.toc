@@ -32,3 +32,5 @@
 \contentsline {section}{\numberline {6}Related Conjectures}{17}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Binary Normality}{17}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Generalization to Algebraic Numbers}{17}{subsection.6.2}%
+\contentsline {section}{References}{20}{section*.4}%
+\contentsline {section}{Appendices}{21}{section*.5}%

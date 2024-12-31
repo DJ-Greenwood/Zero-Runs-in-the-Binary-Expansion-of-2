@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{dirichlet}
+Wikipedia Contributors.
+\newblock Dirichlet's approximation theorem.
+\newblock {\em Wikipedia}, 2021.
+\newblock Retrieved from \url{https://en.wikipedia.org/wiki/Dirichlet%27s_approximation_theorem}.
+
+\bibitem{normalnumber}
+Wikipedia Contributors.
+\newblock Normal number.
+\newblock {\em Wikipedia}, 2021.
+\newblock Retrieved from \url{https://en.wikipedia.org/wiki/Normal_number}.
+
+\bibitem{transcendental}
+Wikipedia Contributors.
+\newblock Transcendental number theory.
+\newblock {\em Wikipedia}, 2021.
+\newblock Retrieved from \url{https://en.wikipedia.org/wiki/Transcendental_number_theory}.
+
+\bibitem{dataaspirant_ks_test}
+{Data Aspirant}.
+\newblock Kolmogorov-smirnov test implementation.
+\newblock \url{https://dataaspirant.com/kolmogorov-smirnov-test/}.
+\newblock Accessed: December 31, 2024.
+
+\bibitem{evertse_diophantine_notes}
+Jan-Hendrik Evertse.
+\newblock Notes on diophantine approximation.
+\newblock \url{https://www.math.leidenuniv.nl/~evertsejh/Roth.pdf}.
+\newblock Leiden University Mathematics, Accessed: December 31, 2024.
+
+\bibitem{mit_ks_test}
+{MIT OpenCourseWare}.
+\newblock Kolmogorov-smirnov test lecture notes.
+\newblock \url{https://ocw.mit.edu/courses/18-443-statistics-for-applications-fall-2006/0c5a824a932b841205b7bb4d27229abc_lecture14.pdf}.
+\newblock Accessed: December 31, 2024.
+
+\bibitem{roth1955}
+K.~F. Roth.
+\newblock Rational approximations to algebraic numbers.
+\newblock {\em Mathematika}, 2(1):1--20, 1955.
+\newblock Retrieved from \url{https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/S0025579300000644}.
+
+\bibitem{wikipedia_ks_test}
+{Wikipedia Contributors}.
+\newblock Kolmogorov-smirnov test.
+\newblock \url{https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test}.
+\newblock Accessed: December 31, 2024.
+
+\end{thebibliography}

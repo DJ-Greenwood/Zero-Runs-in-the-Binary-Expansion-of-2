@@ -22,15 +22,32 @@
 \input{Zero_Run_Normality_Analysis.tex}
 \input{geometry.tex}
 \input{Related_Conjectures.tex}
-
 \input{Acknowledgements.tex}
 
-% References
 \newpage
-%\input{References.tex}  % Verify these references
+\phantomsection
+% References
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\addcontentsline{toc}{section}{References}
+
+% Citation of the references 
+\cite{dirichlet}
+\cite{normalnumber}
+\cite{roth1955}
+\cite{transcendental}
+\cite{dataaspirant_ks_test}
+\cite{evertse_diophantine_notes}
+\cite{mit_ks_test}
+\cite{wikipedia_ks_test}
+
 
 % Appendices
 \newpage
+\phantomsection
+\addcontentsline{toc}{section}{Appendices}
+\section*{\Large\textbf{Appendices}}
 \appendix{Python Code: Zero Run Analysis Algorithm} 
 \label{sec:python_code, Zero Run Analysis Algorithm}
 \lstinputlisting[style=pythonstyle, caption={Zero Run Analysis Algorithm}, label={lst:zero_run_analysis}]{Zero_Run_Analysis_Algorithm.tex}
